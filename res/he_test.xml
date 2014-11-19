@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Swedish.xsl"?>
+<document signature="Army Builder Simple XML Roster" version="379">
+  <game folder="wh8" name="Warhammer Fantasy 8th Edition" versionmajor="2" versionminor="84" usessquads="no"/>
+  <points limitvalue="2400" limittext="2400 points" totalvalue="2395" totaltext="2395 points"/>
+  <roster title="" race="High Elves"/>
+  <squads>
+    <squad name="Prince" models="2" costvalue="625" costtext="625 points">
+      <unit statset="Normal" textstats="Troop Type: In/Mo  Movement: 5  Weapon Skill: 7  Balistic Skill: 7  Strength: 4/7  Toughness: 3  Wounds: 3  Initiative: 8  Attack: 4  Leadership: 10  Armour Save: 3+  Ward Save: (2+), 6+  Magic:   ItemPts: 100" id="hePrince" name="Prince" count="1" basename="Prince" costvalue="625" costtext="625 points" childlevel="0" sizemin="1" sizemax="1" topindex="0">
+        <columnval id="_Name_" value="Prince"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="In/Mo"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="7"/>
+        <columnval id="BS" value="7"/>
+        <columnval id="St" value="4/7"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="3"/>
+        <columnval id="In" value="8"/>
+        <columnval id="At" value="4"/>
+        <columnval id="Ld" value="10"/>
+        <columnval id="Save" value="3+"/>
+        <columnval id="Ward" value="(2+), 6+"/>
+        <columnval id="Magic" value=""/>
+        <link option="heMagicArm" costvalue="5" costtext="5 points" name="Charmed Shield" abbrev="" category="Equip" isvisible="no">
+          <item id="V8A11" name="Charmed Shield" count="1" basename="Charmed Shield" costvalue="5" costtext="5 points" childlevel="1" sizemin="1" sizemax="1" summary="Shield; First hit suffered is discounted on 2+.">
+            <link option="ItemTags" costvalue="0" costtext="0 points" name="Item Tags Helper" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="ItemCost" costvalue="0" costtext="0 points" name="Item Cost Worker" abbrev="" category="Equip" isvisible="no"></link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="MagicRace" tag="Generic" name="Generic" abbrev="Generic"/>
+            <tag group="MagicType" tag="Armor" name="Armor" abbrev="Armor"/>
+            <description>Shield; First hit suffered is discounted on 2+.</description>
+            </item>
+          <exclusion id="ItemPts"/>
+          <exclusion id="MagicArmor"/>
+          <exclusion id="Shield"/>
+          <exclusion id="TwoHands"/>
+          <exclusion id="BSBItems"/>
+          </link>
+        <link option="heMagicTal" costvalue="10" costtext="10 points" name="Golden Crown of Atrazar" abbrev="" category="Equip" isvisible="no">
+          <item id="heGoldCrwn" name="Golden Crown of Atrazar" count="1" basename="Golden Crown of Atrazar" costvalue="10" costtext="10 points" childlevel="1" sizemin="1" sizemax="1" summary="One use only. 2+ ward save against first wound suffered.">
+            <link option="ItemTags" costvalue="0" costtext="0 points" name="Item Tags Helper" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="ItemCost" costvalue="0" costtext="0 points" name="Item Cost Worker" abbrev="" category="Equip" isvisible="no"></link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="MagicRace" tag="HighElf" name="HighElf" abbrev="HighElf"/>
+            <tag group="MagicType" tag="Talisman" name="Talisman" abbrev="Talisman"/>
+            <description>One use only. 2+ ward save against first wound suffered.</description>
+            </item>
+          <exclusion id="ItemPts"/>
+          <exclusion id="Talisman"/>
+          <exclusion id="BSBItems"/>
+          </link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First (Rider only)" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="heDragonX" costvalue="390" costtext="390 points" name="Star Dragon" abbrev="" category="Mount" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: Mo  Movement: 6  Weapon Skill: 7  Balistic Skill: -  Strength: 7  Toughness: 7  Wounds: 7  Initiative: 2  Attack: 6  Leadership: 9  Armour Save: 3+  Ward Save:   Magic:   ItemPts: -" id="heStarDrag" name="Star Dragon" count="1" basename="Star Dragon" costvalue="390" costtext="390 points" childlevel="1" sizemin="1" sizemax="1">
+            <columnval id="_Name_" value="Star Dragon"/>
+            <columnval id="_Count_" value="1"/>
+            <columnval id="TType" value="Mo"/>
+            <columnval id="Mv" value="6"/>
+            <columnval id="WS" value="7"/>
+            <columnval id="BS" value="-"/>
+            <columnval id="St" value="7"/>
+            <columnval id="To" value="7"/>
+            <columnval id="Wo" value="7"/>
+            <columnval id="In" value="2"/>
+            <columnval id="At" value="6"/>
+            <columnval id="Ld" value="9"/>
+            <columnval id="Save" value="3+"/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="heDraFir" costvalue="0" costtext="0 points" name="Dragon Fire" abbrev="" category="Special" isfootnote="yes">
+              <description>Breath Weapon, Strength 4, Flaming Attacks.</description>
+              </link>
+            <link option="Fly" costvalue="0" costtext="0 points" name="Fly" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Model can make a flying movement of 10" and a march flying movement of 20".]]></description>
+              </link>
+            <link option="Large" costvalue="0" costtext="0 points" name="Large Target" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Cannot claim cover modifiers for obstacles. Also, this model's Inspiring Presence or Hold your Ground! ability range is increased to 18".]]></description>
+              </link>
+            <link option="ScalySkin" costvalue="0" costtext="0 points" name="Scaly Skin (3+)" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Improves this model's Armour Save.]]></description>
+              </link>
+            <link option="SStrideFly" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+              <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance. Moreover, flyers can make a flying charge instead of a normal one, adding 10 instead of the Movement value to the roll.</description>
+              </link>
+            <link option="Terror" costvalue="0" costtext="0 points" name="Terror" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Enemy units in base contact must take a Leadership test before blows are struck in Close Combat. If failed, their Weapon Skill is reduced to 1 for that round of Combat.
+
+Units charged by this model must immediately take a Leadership test. If failed, the unit must make a Flee! charge reaction.]]></description>
+              </link>
+            <link option="TStomp" costvalue="0" costtext="0 points" name="Thunderstomp" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Deals D6 automatic hit at creature's Strength with the Always Strikes Last special rule. Applies only against Infantry, War Beasts or Swarms in base contact.]]></description>
+              </link>
+            <link option="Flaming" costvalue="0" costtext="0 points" name="Flaming Attacks" abbrev="" category="EqSpecial" isfootnote="yes">
+              <description>Causes Fear in War Beasts, Chariots and Cavalry. Re-roll failed wounds when shooting at or assaulting a building.</description>
+              </link>
+            <tag group="Has" tag="SStrideFly" name="Swiftstride" abbrev="Swiftstride"/>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="Special" tag="Fly" name="Fly" abbrev="Fly"/>
+            <tag group="Special" tag="Fly" name="Fly" abbrev="Fly"/>
+            <tag group="Special" tag="Large" name="Large Target" abbrev="Large Target"/>
+            <tag group="Special" tag="ScalySkin" name="Scaly Skin" abbrev="Scaly Skin"/>
+            <tag group="Special" tag="Terror" name="Terror" abbrev="Terror"/>
+            <unitstat id="At" value="6"/>
+            <unitstat id="In" value="2"/>
+            <unitstat id="Ld" value="9"/>
+            <unitstat id="Mv" value="6"/>
+            <unitstat id="Save" value="3"/>
+            <unitstat id="St" value="7"/>
+            <unitstat id="To" value="7"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="US" value="7"/>
+            <unitstat id="WS" value="7"/>
+            <unitstat id="Wo" value="7"/>
+            <info>Dragon Fire; Fly; Large Target; Scaly Skin (3+); Swiftstride; Terror; Thunderstomp; Flaming Attacks</info>
+            <images></images>
+            </unit>
+          <exclusion id="Mounts"/>
+          </link>
+        <link option="heFirebo" costvalue="0" costtext="0 points" name="Fireborn" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>2+ ward save against Wounds caused by Flaming Attacks.</description>
+          </link>
+        <link option="AllMagic" costvalue="0" costtext="0 points" name="Magic Helper" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="General" costvalue="0" costtext="0 points" name="General" abbrev="Gen" category="Equip" isfootnote="yes">
+          <description><![CDATA[Inspiring Presence: If not fleeing, friendly units within 12" may use this model's Leadership.]]></description>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <link option="heDragArmr" costvalue="20" costtext="20 points" name="Dragon Armour" abbrev="DA" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Armor"/>
+          <exclusion id="OneWep2"/>
+          <description>Heavy armour; 6+ ward save. Gives Fireborn to the wearer.</description>
+          </link>
+        <link option="heMagicWep" costvalue="60" costtext="60 points" name="Giant Blade" abbrev="" category="Equip" isvisible="no">
+          <item id="V8W1" name="Giant Blade" count="1" basename="Giant Blade" costvalue="60" costtext="60 points" childlevel="1" sizemin="1" sizemax="1" summary="+3 Strength.">
+            <link option="ItemTags" costvalue="0" costtext="0 points" name="Item Tags Helper" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="ItemCost" costvalue="0" costtext="0 points" name="Item Cost Worker" abbrev="" category="Equip" isvisible="no"></link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="MagicRace" tag="Generic" name="Generic" abbrev="Generic"/>
+            <tag group="MagicType" tag="Weapon" name="Weapon" abbrev="Weapon"/>
+            <description>+3 Strength.</description>
+            </item>
+          <exclusion id="ItemPts"/>
+          <exclusion id="MagicWep"/>
+          <exclusion id="MeleeMWep"/>
+          <exclusion id="BSBItems"/>
+          </link>
+        <tag group="Helper" tag="HasMWeapon" name="HasMWeapon" abbrev="HasMWeapon"/>
+        <tag group="Helper" tag="HasMWeapon" name="HasMWeapon" abbrev="HasMWeapon"/>
+        <tag group="Helper" tag="HasShield" name="HasShield" abbrev="HasShield"/>
+        <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="HighEStuff" tag="Prince" name="Prince" abbrev="Prince"/>
+        <tag group="Comp" tag="Lord" name="Lord" abbrev="~[#L_]"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Helper" tag="Character" name="Character" abbrev="Character"/>
+        <tag group="Helper" tag="General" name="General" abbrev="General"/>
+        <exclusage id="MagicWep" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="MeleeMWep" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Mounts" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="OneWep2" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Shield" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Talisman" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="TwoHands" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Armor" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="BSBItems" isexhausted="no" countused="3" countmin="0" countmax="50"/>
+        <exclusage id="ItemPts" isexhausted="no" countused="75" countmin="0" countmax="100"/>
+        <exclusage id="MagicArmor" countused="1" countmin="0" countmax="1"/>
+        <unitstat id="At" value="4"/>
+        <unitstat id="BS" value="7"/>
+        <unitstat id="Fort" value="2"/>
+        <unitstat id="In" value="8"/>
+        <unitstat id="ItemPts" value="100"/>
+        <unitstat id="ItemUsed" value="75"/>
+        <unitstat id="Ld" value="10"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="3"/>
+        <unitstat id="St" value="7"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="7"/>
+        <unitstat id="Wo" value="3"/>
+        <info><![CDATA[Composition: Lord
+General; Hand Weapon; Dragon Armour; Always Strikes First (Rider only); Martial Prowess; Valour of Ages; Fireborn]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Loremaster of Hoeth" models="1" costvalue="285" costtext="285 points">
+      <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 6  Balistic Skill: 4  Strength: 4/6  Toughness: 3  Wounds: 3  Initiative: 7  Attack: 3  Leadership: 9  Armour Save: 5+  Ward Save:   Magic: 2  ItemPts: 100" id="heLorHoe" name="Loremaster of Hoeth" count="1" basename="Loremaster of Hoeth" costvalue="285" costtext="285 points" childlevel="0" sizemin="1" sizemax="1" topindex="1">
+        <columnval id="_Name_" value="Loremaster of Hoeth"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="In"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="6"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="4/6"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="3"/>
+        <columnval id="In" value="7"/>
+        <columnval id="At" value="3"/>
+        <columnval id="Ld" value="9"/>
+        <columnval id="Save" value="5+"/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value="2"/>
+        <link option="StrikeLast" costvalue="0" costtext="0 points" name="Always Strikes Last" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Always Strikes Last in Close Combat, regardless of initiative. If Always Strikes First is also present this ability is nullified.</description>
+          </link>
+        <link option="AllMagic" costvalue="0" costtext="0 points" name="Magic Helper" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="Miscast" costvalue="0" costtext="0 points" name="Miscast Table" abbrev="" category="Spells" isvisible="no">
+          <description>Includes both miscast tables.</description>
+          </link>
+        <link option="Magic2NS" costvalue="0" costtext="0 points" name="Level 2 Wizard" abbrev="Lv2" category="Equip" isfootnote="yes">
+          <description>Can channel Power and Dispel dice. Adds +2 to all attempts to cast and dispel. Knows 2 spells.</description>
+          </link>
+        <link option="GreatWep" costvalue="0" costtext="0 points" name="Great Weapon" abbrev="GW" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+2 Strength, Always Strikes Last, Requires Two Hands.</description>
+          </link>
+        <link option="HeavyArmNS" costvalue="0" costtext="0 points" name="Heavy Armour" abbrev="HArm" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>5+ armour save.</description>
+          </link>
+        <link option="heMagicArc" costvalue="55" costtext="55 points" name="Book of Hoeth" abbrev="" category="Equip" isvisible="no">
+          <item id="heBkHoeth" name="Book of Hoeth" count="1" basename="Book of Hoeth" costvalue="55" costtext="55 points" childlevel="1" sizemin="1" sizemax="1" summary="Re-roll single dice from each casting or dispel attempts. 6s cannot be re-rolled.">
+            <link option="ItemTags" costvalue="0" costtext="0 points" name="Item Tags Helper" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="ItemCost" costvalue="0" costtext="0 points" name="Item Cost Worker" abbrev="" category="Equip" isvisible="no"></link>
+            <tag group="MagicRace" tag="HighElf" name="HighElf" abbrev="HighElf"/>
+            <tag group="MagicType" tag="Arcane" name="Arcane" abbrev="Arcane"/>
+            <description>Re-roll single dice from each casting or dispel attempts. 6s cannot be re-rolled.</description>
+            </item>
+          <exclusion id="ItemPts"/>
+          <exclusion id="Arcane"/>
+          <exclusion id="BSBItems"/>
+          </link>
+        <link option="wsGreatWep" costvalue="0" costtext="0 points" name="Great Weapon Script" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="heDefSho" costvalue="0" costtext="0 points" name="Deflect Shots" abbrev="" category="Special" isfootnote="yes">
+          <description>6+ ward save against non-magical shooting attacks that do not use templates.</description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <tag group="HighEStuff" tag="LoreHoeth" name="Loremaster of Hoeth" abbrev="Loremaster of Hoeth"/>
+        <tag group="Comp" tag="Lord" name="Lord" abbrev="~[#L_]"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="StrikeLast" name="Always Strikes Last" abbrev="Always Strikes Last"/>
+        <tag group="Helper" tag="Character" name="Character" abbrev="Character"/>
+        <tag group="Helper" tag="GreatWep" name="GreatWep" abbrev="GreatWep"/>
+        <tag group="Helper" tag="MageArmor" name="MageArmor" abbrev="MageArmor"/>
+        <tag group="Helper" tag="MultiLore" name="MultiLore" abbrev="MultiLore"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="Helper" tag="2CCWpn" name="2CCWpn" abbrev="2CCWpn"/>
+        <tag group="HighEStuff" tag="ArmAllow" name="ArmAllow" abbrev="ArmAllow"/>
+        <description>Magic: A Loremaster of Hoeth is a Level 2 Wizard who does not generate spells as normal, but instead always knows the eight signature spells from the Lores of Battle Magic.</description>
+        <exclusage id="Arcane" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Armor" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="BSBItems" isexhausted="no" countused="1" countmin="0" countmax="50"/>
+        <exclusage id="ItemPts" isexhausted="no" countused="55" countmin="0" countmax="100"/>
+        <unitstat id="At" value="3"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="In" value="7"/>
+        <unitstat id="ItemPts" value="100"/>
+        <unitstat id="ItemUsed" value="55"/>
+        <unitstat id="Ld" value="9"/>
+        <unitstat id="Magic" value="2"/>
+        <unitstat id="MagicAllow" value="2"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="6"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="6"/>
+        <unitstat id="Wo" value="3"/>
+        <info><![CDATA[Composition: Lord
+Level 2 Wizard; Great Weapon; Heavy Armour; Always Strikes First; Deflect Shots; Martial Prowess; Valour of Ages; Always Strikes Last]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Noble" models="1" costvalue="120" costtext="120 points">
+      <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 6  Balistic Skill: 6  Strength: 4  Toughness: 3  Wounds: 2  Initiative: 7  Attack: 3  Leadership: 9  Armour Save: 4+  Ward Save: (2+), 4)+, 6+  Magic:   ItemPts: 50" id="heNoble" name="Noble" count="1" basename="Noble" costvalue="120" costtext="120 points" childlevel="0" sizemin="1" sizemax="1" topindex="2">
+        <columnval id="_Name_" value="Noble"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="In"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="6"/>
+        <columnval id="BS" value="6"/>
+        <columnval id="St" value="4"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="2"/>
+        <columnval id="In" value="7"/>
+        <columnval id="At" value="3"/>
+        <columnval id="Ld" value="9"/>
+        <columnval id="Save" value="4+"/>
+        <columnval id="Ward" value="(2+), 4)+, 6+"/>
+        <columnval id="Magic" value=""/>
+        <link option="AllMagic" costvalue="0" costtext="0 points" name="Magic Helper" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="heBSB" costvalue="25" costtext="25 points" name="Battle Standard Bearer" abbrev="BSB" category="Equip" isfootnote="yes">
+          <exclusion id="BSBDisable"/>
+          <description><![CDATA[Hold your Ground!: If not fleeing, friendly models within 12" may re-roll failed Leadership tests.]]></description>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <link option="heDragArmr" costvalue="10" costtext="10 points" name="Dragon Armour" abbrev="DA" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Armor"/>
+          <exclusion id="OneWep2"/>
+          <description>Heavy armour; 6+ ward save. Gives Fireborn to the wearer.</description>
+          </link>
+        <link option="heMagica50" costvalue="15" costtext="15 points" name="Shield of the Merwyrm" abbrev="" category="Equip" isvisible="no">
+          <item id="heShiMer" name="Shield of the Merwyrm" count="1" basename="Shield of the Merwyrm" costvalue="15" costtext="15 points" childlevel="1" sizemin="1" sizemax="1" summary="The bearer has a parry save of 4+ (even when using a magic weapon).">
+            <link option="ItemTags" costvalue="0" costtext="0 points" name="Item Tags Helper" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="ItemCost" costvalue="0" costtext="0 points" name="Item Cost Worker" abbrev="" category="Equip" isvisible="no"></link>
+            <tag group="MagicRace" tag="HighElf" name="HighElf" abbrev="HighElf"/>
+            <tag group="MagicType" tag="Armor" name="Armor" abbrev="Armor"/>
+            <description>The bearer has a parry save of 4+ (even when using a magic weapon).</description>
+            </item>
+          <exclusion id="ItemPts"/>
+          <exclusion id="MagicArmor"/>
+          <exclusion id="Shield"/>
+          <exclusion id="BSBItems"/>
+          </link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="heFirebo" costvalue="0" costtext="0 points" name="Fireborn" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>2+ ward save against Wounds caused by Flaming Attacks.</description>
+          </link>
+        <tag group="Comp" tag="Hero" name="Hero" abbrev="~[#H_]"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Helper" tag="BSB" name="Battle Standard Bearer" abbrev="Battle Standard Bearer"/>
+        <tag group="Helper" tag="Character" name="Character" abbrev="Character"/>
+        <tag group="Helper" tag="HasShield" name="HasShield" abbrev="HasShield"/>
+        <tag group="Helper" tag="StandardOK" name="StandardOK" abbrev="StandardOK"/>
+        <exclusage id="ItemPts" isexhausted="no" countused="15" countmin="0" countmax="50"/>
+        <exclusage id="MagicArmor" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="OneWep2" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="Shield" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="BSBItems" isexhausted="no" countused="1" countmin="0" countmax="50"/>
+        <exclusage id="Armor" countused="1" countmin="0" countmax="1"/>
+        <exclusage id="BSBDisable" countused="50" countmin="0" countmax="50"/>
+        <unitstat id="At" value="3"/>
+        <unitstat id="BS" value="6"/>
+        <unitstat id="Fort" value="1"/>
+        <unitstat id="In" value="7"/>
+        <unitstat id="ItemPts" value="50"/>
+        <unitstat id="ItemUsed" value="15"/>
+        <unitstat id="Ld" value="9"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="4"/>
+        <unitstat id="St" value="4"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="6"/>
+        <unitstat id="Wo" value="2"/>
+        <info><![CDATA[Composition: Hero
+Battle Standard Bearer; Hand Weapon; Dragon Armour; Always Strikes First; Martial Prowess; Valour of Ages; Fireborn]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Archers" models="55" costvalue="170" costtext="170 points">
+      <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save:   Ward Save:   Magic:   ItemPts: -" id="heArchers" name="Archers" count="15" basename="Archers" costvalue="170" costtext="170 points" childlevel="0" sizemin="10" sizemax="0" topindex="3">
+        <columnval id="_Name_" value="Archers"/>
+        <columnval id="_Count_" value="15"/>
+        <columnval id="TType" value="In"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="4"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="3"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value=""/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="Longbow" costvalue="0" costtext="0 points" name="Longbow" abbrev="LBow" category="Equip" isequipment="yes" isfootnote="yes">
+          <description><![CDATA[30" Range, Strength 3, Volley Fire.]]></description>
+          </link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="Volley" costvalue="0" costtext="0 points" name="Volley Fire" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></description>
+          </link>
+        <link option="Musician" costvalue="10" costtext="10 points" name="Musician Mus" abbrev="Mus" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to combat resolution in a tie. +1 Leadership when attempting to Rally (may not exceed 10). Allows Swift Reform.</description>
+          </link>
+        <link option="Standard" costvalue="10" costtext="10 points" name="Standard Bearer Std" abbrev="Std" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to Combat Resolution, Standard can be captured if unit Flees.</description>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <tag group="Helper" tag="HasStd" name="HasStd" abbrev="HasStd"/>
+        <tag group="Comp" tag="Core" name="Core" abbrev="~[#C_]"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="Volley" name="Volley Fire" abbrev="Volley Fire"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="Fort" value="1"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="ItemPts" value="25"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="7"/>
+        <unitstat id="St" value="3"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="4"/>
+        <unitstat id="Wo" value="1"/>
+        <info>Musician Mus; Standard Bearer Std; Hand Weapon; Longbow; Always Strikes First; Martial Prowess; Valour of Ages; Volley Fire</info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Archers" models="40" costvalue="170" costtext="170 points">
+      <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save:   Ward Save:   Magic:   ItemPts: -" id="heArchers" name="Archers" count="15" basename="Archers" costvalue="170" costtext="170 points" childlevel="0" sizemin="10" sizemax="0" topindex="4">
+        <columnval id="_Name_" value="Archers"/>
+        <columnval id="_Count_" value="15"/>
+        <columnval id="TType" value="In"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="4"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="3"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value=""/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="Longbow" costvalue="0" costtext="0 points" name="Longbow" abbrev="LBow" category="Equip" isequipment="yes" isfootnote="yes">
+          <description><![CDATA[30" Range, Strength 3, Volley Fire.]]></description>
+          </link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="Volley" costvalue="0" costtext="0 points" name="Volley Fire" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></description>
+          </link>
+        <link option="Musician" costvalue="10" costtext="10 points" name="Musician Mus" abbrev="Mus" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to combat resolution in a tie. +1 Leadership when attempting to Rally (may not exceed 10). Allows Swift Reform.</description>
+          </link>
+        <link option="Standard" costvalue="10" costtext="10 points" name="Standard Bearer Std" abbrev="Std" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to Combat Resolution, Standard can be captured if unit Flees.</description>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <tag group="Helper" tag="HasStd" name="HasStd" abbrev="HasStd"/>
+        <tag group="Comp" tag="Core" name="Core" abbrev="~[#C_]"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="Volley" name="Volley Fire" abbrev="Volley Fire"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="Fort" value="1"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="ItemPts" value="25"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="7"/>
+        <unitstat id="St" value="3"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="4"/>
+        <unitstat id="Wo" value="1"/>
+        <info>Musician Mus; Standard Bearer Std; Hand Weapon; Longbow; Always Strikes First; Martial Prowess; Valour of Ages; Volley Fire</info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Ellyrian Reavers" models="10" costvalue="95" costtext="95 points">
+      <unit statset="Normal" textstats="Troop Type: Ca  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3+*  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 5+  Ward Save:   Magic:   ItemPts: -" id="heEllyReav" name="Ellyrian Reavers" count="5" basename="Ellyrian Reavers" costvalue="95" costtext="95 points" childlevel="0" sizemin="5" sizemax="0" topindex="5">
+        <columnval id="_Name_" value="Ellyrian Reavers"/>
+        <columnval id="_Count_" value="5"/>
+        <columnval id="TType" value="Ca"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="4"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="3+*"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value="5+"/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heSteeds" costvalue="0" costtext="0 points" name="Elven Steeds" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 9  Weapon Skill: 3  Balistic Skill: -  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 4  Attack: 1  Leadership: 5  Armour Save:   Ward Save:   Magic:   ItemPts: -" id="heElvenStd" name="Elven Steed" count="5" basename="Elven Steed" costvalue="0" costtext="0 points" childlevel="1" sizemin="5" sizemax="5">
+            <columnval id="_Name_" value="Elven Steed"/>
+            <columnval id="_Count_" value="5"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="9"/>
+            <columnval id="WS" value="3"/>
+            <columnval id="BS" value="-"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="4"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="5"/>
+            <columnval id="Save" value=""/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+              <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+              </link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+            <tag group="Helper" tag="BardingOK" name="BardingOK" abbrev="BardingOK"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="In" value="4"/>
+            <unitstat id="Ld" value="5"/>
+            <unitstat id="Mv" value="9"/>
+            <unitstat id="Save" value="7"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="3"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Swiftstride</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <link option="Spear" costvalue="0" costtext="0 points" name="Spear" abbrev="Spr" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[(Foot) Fight in Extra Ranks.
+(Mounted) +1 Strength on the charge.]]></description>
+          </link>
+        <link option="Bow" costvalue="15" costtext="15 points" name="Bow" abbrev="Bow" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[24" Range, Strength 3, Volley Fire.]]></description>
+          </link>
+        <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>6+ armour save.</description>
+          </link>
+        <link option="wsSpear" costvalue="0" costtext="0 points" name="Spear Script" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First (Riders only)" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="FastCav" costvalue="0" costtext="0 points" name="Fast Cavalry" abbrev="" category="Special" isfootnote="yes">
+          <description>Models with this rule may free reform, feign flights and shoot after having marched.</description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+          <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="Vanguard" costvalue="0" costtext="0 points" name="Vanguard" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[After deployment, this unit can make a free movement of 12".]]></description>
+          </link>
+        <link option="Volley" costvalue="0" costtext="0 points" name="Volley Fire" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></description>
+          </link>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+        <tag group="Has" tag="Volley" name="Volley Fire" abbrev="Volley Fire"/>
+        <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="Special" tag="FastCav" name="Fast Cavalry" abbrev="Fast Cavalry"/>
+        <tag group="Comp" tag="Core" name="Core" abbrev="~[#C_]"/>
+        <exclusage id="Min1" isexhausted="no" countused="2" countmin="1" countmax="9999"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="3"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="WS" value="4"/>
+        <unitstat id="Wo" value="1"/>
+        <info><![CDATA[Composition: Core
+Hand Weapon; Spear; Bow; Light Armour; Always Strikes First (Riders only); Fast Cavalry; Martial Prowess; Swiftstride; Valour of Ages; Vanguard; Volley Fire]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Ellyrian Reavers" models="10" costvalue="95" costtext="95 points">
+      <unit statset="Normal" textstats="Troop Type: Ca  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3+*  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 5+  Ward Save:   Magic:   ItemPts: -" id="heEllyReav" name="Ellyrian Reavers" count="5" basename="Ellyrian Reavers" costvalue="95" costtext="95 points" childlevel="0" sizemin="5" sizemax="0" topindex="6">
+        <columnval id="_Name_" value="Ellyrian Reavers"/>
+        <columnval id="_Count_" value="5"/>
+        <columnval id="TType" value="Ca"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="4"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="3+*"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value="5+"/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heSteeds" costvalue="0" costtext="0 points" name="Elven Steeds" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 9  Weapon Skill: 3  Balistic Skill: -  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 4  Attack: 1  Leadership: 5  Armour Save:   Ward Save:   Magic:   ItemPts: -" id="heElvenStd" name="Elven Steed" count="5" basename="Elven Steed" costvalue="0" costtext="0 points" childlevel="1" sizemin="5" sizemax="5">
+            <columnval id="_Name_" value="Elven Steed"/>
+            <columnval id="_Count_" value="5"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="9"/>
+            <columnval id="WS" value="3"/>
+            <columnval id="BS" value="-"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="4"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="5"/>
+            <columnval id="Save" value=""/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+              <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+              </link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+            <tag group="Helper" tag="BardingOK" name="BardingOK" abbrev="BardingOK"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="In" value="4"/>
+            <unitstat id="Ld" value="5"/>
+            <unitstat id="Mv" value="9"/>
+            <unitstat id="Save" value="7"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="3"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Swiftstride</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <link option="Spear" costvalue="0" costtext="0 points" name="Spear" abbrev="Spr" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[(Foot) Fight in Extra Ranks.
+(Mounted) +1 Strength on the charge.]]></description>
+          </link>
+        <link option="Bow" costvalue="15" costtext="15 points" name="Bow" abbrev="Bow" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[24" Range, Strength 3, Volley Fire.]]></description>
+          </link>
+        <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>6+ armour save.</description>
+          </link>
+        <link option="wsSpear" costvalue="0" costtext="0 points" name="Spear Script" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First (Riders only)" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="FastCav" costvalue="0" costtext="0 points" name="Fast Cavalry" abbrev="" category="Special" isfootnote="yes">
+          <description>Models with this rule may free reform, feign flights and shoot after having marched.</description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+          <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="Vanguard" costvalue="0" costtext="0 points" name="Vanguard" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[After deployment, this unit can make a free movement of 12".]]></description>
+          </link>
+        <link option="Volley" costvalue="0" costtext="0 points" name="Volley Fire" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></description>
+          </link>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+        <tag group="Has" tag="Volley" name="Volley Fire" abbrev="Volley Fire"/>
+        <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="Special" tag="FastCav" name="Fast Cavalry" abbrev="Fast Cavalry"/>
+        <tag group="Comp" tag="Core" name="Core" abbrev="~[#C_]"/>
+        <exclusage id="Min1" isexhausted="no" countused="2" countmin="1" countmax="9999"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="3"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="WS" value="4"/>
+        <unitstat id="Wo" value="1"/>
+        <info><![CDATA[Composition: Core
+Hand Weapon; Spear; Bow; Light Armour; Always Strikes First (Riders only); Fast Cavalry; Martial Prowess; Swiftstride; Valour of Ages; Vanguard; Volley Fire]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Ellyrian Reavers" models="10" costvalue="95" costtext="95 points">
+      <unit statset="Normal" textstats="Troop Type: Ca  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3+*  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 5+  Ward Save:   Magic:   ItemPts: -" id="heEllyReav" name="Ellyrian Reavers" count="5" basename="Ellyrian Reavers" costvalue="95" costtext="95 points" childlevel="0" sizemin="5" sizemax="0" topindex="7">
+        <columnval id="_Name_" value="Ellyrian Reavers"/>
+        <columnval id="_Count_" value="5"/>
+        <columnval id="TType" value="Ca"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="4"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="3+*"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value="5+"/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heSteeds" costvalue="0" costtext="0 points" name="Elven Steeds" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 9  Weapon Skill: 3  Balistic Skill: -  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 4  Attack: 1  Leadership: 5  Armour Save:   Ward Save:   Magic:   ItemPts: -" id="heElvenStd" name="Elven Steed" count="5" basename="Elven Steed" costvalue="0" costtext="0 points" childlevel="1" sizemin="5" sizemax="5">
+            <columnval id="_Name_" value="Elven Steed"/>
+            <columnval id="_Count_" value="5"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="9"/>
+            <columnval id="WS" value="3"/>
+            <columnval id="BS" value="-"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="4"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="5"/>
+            <columnval id="Save" value=""/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+              <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+              </link>
+            <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+            <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+            <tag group="Helper" tag="BardingOK" name="BardingOK" abbrev="BardingOK"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="In" value="4"/>
+            <unitstat id="Ld" value="5"/>
+            <unitstat id="Mv" value="9"/>
+            <unitstat id="Save" value="7"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="3"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Swiftstride</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+          <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+          </link>
+        <link option="Spear" costvalue="0" costtext="0 points" name="Spear" abbrev="Spr" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[(Foot) Fight in Extra Ranks.
+(Mounted) +1 Strength on the charge.]]></description>
+          </link>
+        <link option="Bow" costvalue="15" costtext="15 points" name="Bow" abbrev="Bow" category="Equip" isequipment="yes" isfootnote="yes">
+          <exclusion id="Min1"/>
+          <description><![CDATA[24" Range, Strength 3, Volley Fire.]]></description>
+          </link>
+        <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>6+ armour save.</description>
+          </link>
+        <link option="wsSpear" costvalue="0" costtext="0 points" name="Spear Script" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First (Riders only)" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="FastCav" costvalue="0" costtext="0 points" name="Fast Cavalry" abbrev="" category="Special" isfootnote="yes">
+          <description>Models with this rule may free reform, feign flights and shoot after having marched.</description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="SStride" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+          <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance.</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="Vanguard" costvalue="0" costtext="0 points" name="Vanguard" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[After deployment, this unit can make a free movement of 12".]]></description>
+          </link>
+        <link option="Volley" costvalue="0" costtext="0 points" name="Volley Fire" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></description>
+          </link>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="SStride" name="Swiftstride" abbrev="Swiftstride"/>
+        <tag group="Has" tag="Volley" name="Volley Fire" abbrev="Volley Fire"/>
+        <tag group="Helper" tag="Mounted" name="Mounted" abbrev="Mounted"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="Special" tag="FastCav" name="Fast Cavalry" abbrev="Fast Cavalry"/>
+        <tag group="Comp" tag="Core" name="Core" abbrev="~[#C_]"/>
+        <exclusage id="Min1" isexhausted="no" countused="2" countmin="1" countmax="9999"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="3"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="WS" value="4"/>
+        <unitstat id="Wo" value="1"/>
+        <info><![CDATA[Composition: Core
+Hand Weapon; Spear; Bow; Light Armour; Always Strikes First (Riders only); Fast Cavalry; Martial Prowess; Swiftstride; Valour of Ages; Vanguard; Volley Fire]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="White Lions of Chrace" models="20" costvalue="290" costtext="290 points">
+      <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 5  Balistic Skill: 4  Strength: 4/6  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 5+*  Ward Save:   Magic:   ItemPts: -" id="heWhitLion" name="White Lions" count="19" basename="White Lions of Chrace" costvalue="290" costtext="290 points" childlevel="0" sizemin="10" sizemax="0" topindex="8">
+        <columnval id="_Name_" value="White Lions"/>
+        <columnval id="_Count_" value="19"/>
+        <columnval id="TType" value="In"/>
+        <columnval id="Mv" value="5"/>
+        <columnval id="WS" value="5"/>
+        <columnval id="BS" value="4"/>
+        <columnval id="St" value="4/6"/>
+        <columnval id="To" value="3"/>
+        <columnval id="Wo" value="1"/>
+        <columnval id="In" value="5"/>
+        <columnval id="At" value="1"/>
+        <columnval id="Ld" value="8"/>
+        <columnval id="Save" value="5+*"/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heGuardian" costvalue="23" costtext="23 points" name="Guardian Sarge" abbrev="Sarge" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: In  Movement: 5  Weapon Skill: 5  Balistic Skill: 4  Strength: 4/6  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 2  Leadership: 8  Armour Save: 5+*  Ward Save:   Magic:   ItemPts: -" id="heGuardian" name="Guardian" count="1" basename="Guardian" costvalue="23" costtext="23 points" childlevel="1" sizemin="1" sizemax="1">
+            <columnval id="_Name_" value="Guardian"/>
+            <columnval id="_Count_" value="1"/>
+            <columnval id="TType" value="In"/>
+            <columnval id="Mv" value="5"/>
+            <columnval id="WS" value="5"/>
+            <columnval id="BS" value="4"/>
+            <columnval id="St" value="4/6"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="5"/>
+            <columnval id="At" value="2"/>
+            <columnval id="Ld" value="8"/>
+            <columnval id="Save" value="5+*"/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="GreatWep" costvalue="0" costtext="0 points" name="Great Weapon" abbrev="GW" category="Equip" isequipment="yes" isfootnote="yes">
+              <exclusion id="TwoHands"/>
+              <description>+2 Strength, Always Strikes Last, Requires Two Hands.</description>
+              </link>
+            <link option="HeavyArmNS" costvalue="0" costtext="0 points" name="Heavy Armour" abbrev="HArm" category="Equip" isequipment="yes" isfootnote="yes">
+              <description>5+ armour save.</description>
+              </link>
+            <link option="heLioClo" costvalue="0" costtext="0 points" name="Lion Cloak" abbrev="" category="Equip" isequipment="yes" isfootnote="yes">
+              <description>+2 armour save against non-magical shooting attacks.</description>
+              </link>
+            <link option="wsGreatWep" costvalue="0" costtext="0 points" name="Great Weapon Script" abbrev="" category="Equip" isvisible="no"></link>
+            <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+              </link>
+            <link option="Strider" costvalue="0" costtext="0 points" name="Forest Strider" abbrev="" category="Special" isfootnote="yes">
+              <description>Model does not take Dangerous Terrain tests. Applies only for specified terrain type; if none is specified, applies for every terrain type.</description>
+              </link>
+            <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+              <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+              </link>
+            <link option="Stubborn" costvalue="0" costtext="0 points" name="Stubborn" abbrev="" category="Special" isfootnote="yes">
+              <description>Unit always takes break tests on unmodified Leadership.</description>
+              </link>
+            <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+              <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+              </link>
+            <link option="StrikeLast" costvalue="0" costtext="0 points" name="Always Strikes Last" abbrev="" category="EqSpecial" isfootnote="yes">
+              <description>Always Strikes Last in Close Combat, regardless of initiative. If Always Strikes First is also present this ability is nullified.</description>
+              </link>
+            <tag group="Helper" tag="GreatWep" name="GreatWep" abbrev="GreatWep"/>
+            <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+            <tag group="Helper" tag="UnitChamp" name="Model is Unit Champion" abbrev="Model is Unit Champion"/>
+            <tag group="Helper" tag="2CCWpn" name="2CCWpn" abbrev="2CCWpn"/>
+            <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+            <tag group="Has" tag="StrikeLast" name="Always Strikes Last" abbrev="Always Strikes Last"/>
+            <tag group="Has" tag="Stubborn" name="Stubborn" abbrev="Stubborn"/>
+            <exclusage id="TwoHands" countused="1" countmin="0" countmax="1"/>
+            <exclusage id="Armor" countused="1" countmin="0" countmax="1"/>
+            <unitstat id="At" value="2"/>
+            <unitstat id="BS" value="4"/>
+            <unitstat id="In" value="5"/>
+            <unitstat id="ItemPts" value="25"/>
+            <unitstat id="Ld" value="8"/>
+            <unitstat id="Mv" value="5"/>
+            <unitstat id="Save" value="5"/>
+            <unitstat id="St" value="6"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="US" value="1"/>
+            <unitstat id="WS" value="5"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Great Weapon; Heavy Armour; Lion Cloak; Always Strikes First; Forest Strider; Martial Prowess; Stubborn; Valour of Ages; Always Strikes Last</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="Musician" costvalue="10" costtext="10 points" name="Musician Mus" abbrev="Mus" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to combat resolution in a tie. +1 Leadership when attempting to Rally (may not exceed 10). Allows Swift Reform.</description>
+          </link>
+        <link option="Standard" costvalue="10" costtext="10 points" name="Standard Bearer Std" abbrev="Std" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+1 to Combat Resolution, Standard can be captured if unit Flees.</description>
+          </link>
+        <link option="GreatWep" costvalue="0" costtext="0 points" name="Great Weapon" abbrev="GW" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+2 Strength, Always Strikes Last, Requires Two Hands.</description>
+          </link>
+        <link option="HeavyArmor" costvalue="0" costtext="0 points" name="Heavy Armour" abbrev="HArm" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>5+ armour save.</description>
+          </link>
+        <link option="heLioClo" costvalue="0" costtext="0 points" name="Lion Cloak" abbrev="" category="Equip" isequipment="yes" isfootnote="yes">
+          <description>+2 armour save against non-magical shooting attacks.</description>
+          </link>
+        <link option="wsGreatWep" costvalue="0" costtext="0 points" name="Great Weapon Script" abbrev="" category="Equip" isvisible="no"></link>
+        <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+          </link>
+        <link option="Strider" costvalue="0" costtext="0 points" name="Forest Strider" abbrev="" category="Special" isfootnote="yes">
+          <description>Model does not take Dangerous Terrain tests. Applies only for specified terrain type; if none is specified, applies for every terrain type.</description>
+          </link>
+        <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+          <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+          </link>
+        <link option="Stubborn" costvalue="0" costtext="0 points" name="Stubborn" abbrev="" category="Special" isfootnote="yes">
+          <description>Unit always takes break tests on unmodified Leadership.</description>
+          </link>
+        <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+          <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+          </link>
+        <link option="StrikeLast" costvalue="0" costtext="0 points" name="Always Strikes Last" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Always Strikes Last in Close Combat, regardless of initiative. If Always Strikes First is also present this ability is nullified.</description>
+          </link>
+        <tag group="Has" tag="Stubborn" name="Stubborn" abbrev="Stubborn"/>
+        <tag group="Helper" tag="GreatWep" name="GreatWep" abbrev="GreatWep"/>
+        <tag group="Helper" tag="HasCommand" name="HasCommand" abbrev="HasCommand"/>
+        <tag group="Helper" tag="HasStd" name="HasStd" abbrev="HasStd"/>
+        <tag group="Helper" tag="NoShield" name="NoShield" abbrev="NoShield"/>
+        <tag group="Helper" tag="StandardOK" name="StandardOK" abbrev="StandardOK"/>
+        <tag group="Helper" tag="2CCWpn" name="2CCWpn" abbrev="2CCWpn"/>
+        <tag group="HighEStuff" tag="WhiteLions" name="WhiteLions" abbrev="WhiteLions"/>
+        <tag group="Special" tag="Stubborn" name="Stubborn" abbrev="Stubborn"/>
+        <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+        <tag group="Has" tag="StrikeLast" name="Always Strikes Last" abbrev="Always Strikes Last"/>
+        <tag group="Comp" tag="Special" name="Special" abbrev="~[#S_]"/>
+        <tag group="Duplicates" tag="Special2" name="Special2" abbrev="Special2"/>
+        <unitstat id="At" value="1"/>
+        <unitstat id="BS" value="4"/>
+        <unitstat id="Fort" value="1"/>
+        <unitstat id="In" value="5"/>
+        <unitstat id="ItemPts" value="50"/>
+        <unitstat id="Ld" value="8"/>
+        <unitstat id="Mv" value="5"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="6"/>
+        <unitstat id="To" value="3"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="1"/>
+        <unitstat id="WS" value="5"/>
+        <unitstat id="Wo" value="1"/>
+        <info><![CDATA[Composition: Special
+Musician Mus; Standard Bearer Std; Great Weapon; Heavy Armour; Lion Cloak; Always Strikes First; Forest Strider; Martial Prowess; Stubborn; Valour of Ages; Always Strikes Last]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Frostheart Phoenix" models="1" costvalue="240" costtext="240 points">
+      <unit statset="Normal" textstats="Troop Type: Mo  Movement: 2  Weapon Skill: 6  Balistic Skill: -  Strength: 6  Toughness: 6  Wounds: 5  Initiative: 3  Attack: 4  Leadership: 9  Armour Save: 5+  Ward Save: 5+  Magic:   ItemPts: -" id="heFroPho" name="Frostheart Phoenix" count="1" basename="Frostheart Phoenix" costvalue="240" costtext="240 points" childlevel="0" sizemin="1" sizemax="1" topindex="9">
+        <columnval id="_Name_" value="Frostheart Phoenix"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="Mo"/>
+        <columnval id="Mv" value="2"/>
+        <columnval id="WS" value="6"/>
+        <columnval id="BS" value="-"/>
+        <columnval id="St" value="6"/>
+        <columnval id="To" value="6"/>
+        <columnval id="Wo" value="5"/>
+        <columnval id="In" value="3"/>
+        <columnval id="At" value="4"/>
+        <columnval id="Ld" value="9"/>
+        <columnval id="Save" value="5+"/>
+        <columnval id="Ward" value="5+"/>
+        <columnval id="Magic" value=""/>
+        <link option="heAttMag" costvalue="0" costtext="0 points" name="Attuned to Magic" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[5+ ward save and Close Combat attacks are magical. Generates additional effects during the player's magic phase.]]></description>
+          </link>
+        <link option="heBliAur" costvalue="0" costtext="0 points" name="Blizzard Aura" abbrev="" category="Special" isfootnote="yes">
+          <description>Enemy unit in base contact has Always Strikes Last and suffers -1 to Strength (to a minimum of 1).</description>
+          </link>
+        <link option="Fly" costvalue="0" costtext="0 points" name="Fly" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Model can make a flying movement of 10" and a march flying movement of 20".]]></description>
+          </link>
+        <link option="Large" costvalue="0" costtext="0 points" name="Large Target" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Cannot claim cover modifiers for obstacles. Also, this model's Inspiring Presence or Hold your Ground! ability range is increased to 18".]]></description>
+          </link>
+        <link option="NatArmor" costvalue="0" costtext="0 points" name="Natural Armour (5+)" abbrev="" category="Special" isfootnote="yes">
+          <description>Improves armour save.</description>
+          </link>
+        <link option="SStrideFly" costvalue="0" costtext="0 points" name="Swiftstride" abbrev="" category="Special" isfootnote="yes">
+          <description>When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance. Moreover, flyers can make a flying charge instead of a normal one, adding 10 instead of the Movement value to the roll.</description>
+          </link>
+        <link option="Terror" costvalue="0" costtext="0 points" name="Terror" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Enemy units in base contact must take a Leadership test before blows are struck in Close Combat. If failed, their Weapon Skill is reduced to 1 for that round of Combat.
+
+Units charged by this model must immediately take a Leadership test. If failed, the unit must make a Flee! charge reaction.]]></description>
+          </link>
+        <link option="TStomp" costvalue="0" costtext="0 points" name="Thunderstomp" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Deals D6 automatic hit at creature's Strength with the Always Strikes Last special rule. Applies only against Infantry, War Beasts or Swarms in base contact.]]></description>
+          </link>
+        <tag group="Comp" tag="Rare" name="Rare" abbrev="~[#R_]"/>
+        <tag group="Duplicates" tag="Rare4" name="Rare4" abbrev="Rare4"/>
+        <tag group="Has" tag="SStrideFly" name="Swiftstride" abbrev="Swiftstride"/>
+        <tag group="Special" tag="Fly" name="Fly" abbrev="Fly"/>
+        <tag group="Special" tag="Fly" name="Fly" abbrev="Fly"/>
+        <tag group="Special" tag="Large" name="Large Target" abbrev="Large Target"/>
+        <tag group="Special" tag="Terror" name="Terror" abbrev="Terror"/>
+        <unitstat id="At" value="4"/>
+        <unitstat id="In" value="3"/>
+        <unitstat id="Ld" value="9"/>
+        <unitstat id="Mv" value="2"/>
+        <unitstat id="Save" value="5"/>
+        <unitstat id="St" value="6"/>
+        <unitstat id="To" value="6"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="6"/>
+        <unitstat id="WS" value="6"/>
+        <unitstat id="Wo" value="5"/>
+        <info><![CDATA[Composition: Rare
+Attuned to Magic; Blizzard Aura; Fly; Large Target; Natural Armour (5+); Swiftstride; Terror; Thunderstomp]]></info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Eagle Claw Bolt Thrower" models="3" costvalue="70" costtext="70 points">
+      <unit statset="WarEngSave" textstats="Troop Type: WM  Toughness: 7  Wounds: 2  Armour Save: " id="heRepBolt" name="Eagle Claw Bolt Thrower" count="1" basename="Eagle Claw Bolt Thrower" costvalue="70" costtext="70 points" childlevel="0" sizemin="1" sizemax="1" topindex="10">
+        <columnval id="_Name_" value="Eagle Claw Bolt Thrower"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="WM"/>
+        <columnval id="Mv" value=""/>
+        <columnval id="WS" value=""/>
+        <columnval id="BS" value=""/>
+        <columnval id="St" value=""/>
+        <columnval id="To" value="7"/>
+        <columnval id="Wo" value="2"/>
+        <columnval id="In" value=""/>
+        <columnval id="At" value=""/>
+        <columnval id="Ld" value=""/>
+        <columnval id="Save" value=""/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heBoltCrew" costvalue="0" costtext="0 points" name="Crew" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 6+  Ward Save:   Magic:   ItemPts: -" id="heBoltCrew" name="Sea Guard Crew" count="2" basename="Sea Guard Crew" costvalue="0" costtext="0 points" childlevel="1" sizemin="2" sizemax="2">
+            <columnval id="_Name_" value="Sea Guard Crew"/>
+            <columnval id="_Count_" value="2"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="5"/>
+            <columnval id="WS" value="4"/>
+            <columnval id="BS" value="4"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="5"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="8"/>
+            <columnval id="Save" value="6+"/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+              <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+              </link>
+            <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+              <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+              </link>
+            <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+              <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+              </link>
+            <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+              <description>6+ armour save.</description>
+              </link>
+            <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+              </link>
+            <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="BS" value="4"/>
+            <unitstat id="In" value="5"/>
+            <unitstat id="Ld" value="8"/>
+            <unitstat id="Mv" value="5"/>
+            <unitstat id="Save" value="6"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="4"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Hand Weapon; Light Armour; Always Strikes First; Martial Prowess; Valour of Ages</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="BoltThrow" costvalue="0" costtext="0 points" name="Bolt Thrower" abbrev="" category="TType" isvisible="no" isfootnote="yes">
+          <description><![CDATA[48" Range, Strength 6, Multiple Wounds (D3), Ignores armour saves. Penetrates ranks at -1 Strength for each model slain.]]></description>
+          </link>
+        <link option="heReBoTh" costvalue="0" costtext="0 points" name="Repeater Bolt Thrower" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Can fire either as an ordinary bolt thrower or fire six Range 48", Strength 4, Armour Piercing bolts.]]></description>
+          </link>
+        <link option="APiercing" costvalue="0" costtext="0 points" name="Armour Piercing" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Wounds caused inflict a further -1 armour save modifier. </description>
+          </link>
+        <link option="MultiWound" costvalue="0" costtext="0 points" name="Multiple Wounds (D3)" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Each unsaved Wound inflicted is multiplied by the number indicated.</description>
+          </link>
+        <tag group="HighEStuff" tag="Repeater" name="Repeater" abbrev="Repeater"/>
+        <tag group="Comp" tag="Rare" name="Rare" abbrev="~[#R_]"/>
+        <tag group="Has" tag="APiercing" name="Armour Piercing" abbrev="Armour Piercing"/>
+        <unitstat id="Save" value="7"/>
+        <unitstat id="To" value="7"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="Wo" value="2"/>
+        <info>Repeater Bolt Thrower; Armour Piercing; Multiple Wounds (D3)</info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Eagle Claw Bolt Thrower" models="3" costvalue="70" costtext="70 points">
+      <unit statset="WarEngSave" textstats="Troop Type: WM  Toughness: 7  Wounds: 2  Armour Save: " id="heRepBolt" name="Eagle Claw Bolt Thrower" count="1" basename="Eagle Claw Bolt Thrower" costvalue="70" costtext="70 points" childlevel="0" sizemin="1" sizemax="1" topindex="11">
+        <columnval id="_Name_" value="Eagle Claw Bolt Thrower"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="WM"/>
+        <columnval id="Mv" value=""/>
+        <columnval id="WS" value=""/>
+        <columnval id="BS" value=""/>
+        <columnval id="St" value=""/>
+        <columnval id="To" value="7"/>
+        <columnval id="Wo" value="2"/>
+        <columnval id="In" value=""/>
+        <columnval id="At" value=""/>
+        <columnval id="Ld" value=""/>
+        <columnval id="Save" value=""/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heBoltCrew" costvalue="0" costtext="0 points" name="Crew" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 6+  Ward Save:   Magic:   ItemPts: -" id="heBoltCrew" name="Sea Guard Crew" count="2" basename="Sea Guard Crew" costvalue="0" costtext="0 points" childlevel="1" sizemin="2" sizemax="2">
+            <columnval id="_Name_" value="Sea Guard Crew"/>
+            <columnval id="_Count_" value="2"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="5"/>
+            <columnval id="WS" value="4"/>
+            <columnval id="BS" value="4"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="5"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="8"/>
+            <columnval id="Save" value="6+"/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+              <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+              </link>
+            <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+              <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+              </link>
+            <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+              <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+              </link>
+            <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+              <description>6+ armour save.</description>
+              </link>
+            <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+              </link>
+            <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="BS" value="4"/>
+            <unitstat id="In" value="5"/>
+            <unitstat id="Ld" value="8"/>
+            <unitstat id="Mv" value="5"/>
+            <unitstat id="Save" value="6"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="4"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Hand Weapon; Light Armour; Always Strikes First; Martial Prowess; Valour of Ages</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="BoltThrow" costvalue="0" costtext="0 points" name="Bolt Thrower" abbrev="" category="TType" isvisible="no" isfootnote="yes">
+          <description><![CDATA[48" Range, Strength 6, Multiple Wounds (D3), Ignores armour saves. Penetrates ranks at -1 Strength for each model slain.]]></description>
+          </link>
+        <link option="heReBoTh" costvalue="0" costtext="0 points" name="Repeater Bolt Thrower" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Can fire either as an ordinary bolt thrower or fire six Range 48", Strength 4, Armour Piercing bolts.]]></description>
+          </link>
+        <link option="APiercing" costvalue="0" costtext="0 points" name="Armour Piercing" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Wounds caused inflict a further -1 armour save modifier. </description>
+          </link>
+        <link option="MultiWound" costvalue="0" costtext="0 points" name="Multiple Wounds (D3)" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Each unsaved Wound inflicted is multiplied by the number indicated.</description>
+          </link>
+        <tag group="HighEStuff" tag="Repeater" name="Repeater" abbrev="Repeater"/>
+        <tag group="Comp" tag="Rare" name="Rare" abbrev="~[#R_]"/>
+        <tag group="Has" tag="APiercing" name="Armour Piercing" abbrev="Armour Piercing"/>
+        <unitstat id="Save" value="7"/>
+        <unitstat id="To" value="7"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="Wo" value="2"/>
+        <info>Repeater Bolt Thrower; Armour Piercing; Multiple Wounds (D3)</info>
+        <images></images>
+        </unit>
+      </squad>
+    <squad name="Eagle Claw Bolt Thrower" models="3" costvalue="70" costtext="70 points">
+      <unit statset="WarEngSave" textstats="Troop Type: WM  Toughness: 7  Wounds: 2  Armour Save: " id="heRepBolt" name="Eagle Claw Bolt Thrower" count="1" basename="Eagle Claw Bolt Thrower" costvalue="70" costtext="70 points" childlevel="0" sizemin="1" sizemax="1" topindex="12">
+        <columnval id="_Name_" value="Eagle Claw Bolt Thrower"/>
+        <columnval id="_Count_" value="1"/>
+        <columnval id="TType" value="WM"/>
+        <columnval id="Mv" value=""/>
+        <columnval id="WS" value=""/>
+        <columnval id="BS" value=""/>
+        <columnval id="St" value=""/>
+        <columnval id="To" value="7"/>
+        <columnval id="Wo" value="2"/>
+        <columnval id="In" value=""/>
+        <columnval id="At" value=""/>
+        <columnval id="Ld" value=""/>
+        <columnval id="Save" value=""/>
+        <columnval id="Ward" value=""/>
+        <columnval id="Magic" value=""/>
+        <link option="heBoltCrew" costvalue="0" costtext="0 points" name="Crew" abbrev="" category="Equip" isvisible="no">
+          <unit statset="Normal" textstats="Troop Type: -  Movement: 5  Weapon Skill: 4  Balistic Skill: 4  Strength: 3  Toughness: 3  Wounds: 1  Initiative: 5  Attack: 1  Leadership: 8  Armour Save: 6+  Ward Save:   Magic:   ItemPts: -" id="heBoltCrew" name="Sea Guard Crew" count="2" basename="Sea Guard Crew" costvalue="0" costtext="0 points" childlevel="1" sizemin="2" sizemax="2">
+            <columnval id="_Name_" value="Sea Guard Crew"/>
+            <columnval id="_Count_" value="2"/>
+            <columnval id="TType" value="-"/>
+            <columnval id="Mv" value="5"/>
+            <columnval id="WS" value="4"/>
+            <columnval id="BS" value="4"/>
+            <columnval id="St" value="3"/>
+            <columnval id="To" value="3"/>
+            <columnval id="Wo" value="1"/>
+            <columnval id="In" value="5"/>
+            <columnval id="At" value="1"/>
+            <columnval id="Ld" value="8"/>
+            <columnval id="Save" value="6+"/>
+            <columnval id="Ward" value=""/>
+            <columnval id="Magic" value=""/>
+            <link option="heMarPro" costvalue="0" costtext="0 points" name="Martial Prowess" abbrev="" category="Special" isfootnote="yes">
+              <description>Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</description>
+              </link>
+            <link option="heValAge" costvalue="0" costtext="0 points" name="Valour of Ages" abbrev="" category="Special" isfootnote="yes">
+              <description>When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</description>
+              </link>
+            <link option="HandWeapon" costvalue="0" costtext="0 points" name="Hand Weapon" abbrev="HW" category="Equip" isfootnote="yes">
+              <description>6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</description>
+              </link>
+            <link option="LightArmor" costvalue="0" costtext="0 points" name="Light Armour" abbrev="LArm" category="Equip" isequipment="yes" isfootnote="yes">
+              <description>6+ armour save.</description>
+              </link>
+            <link option="StrikeF" costvalue="0" costtext="0 points" name="Always Strikes First" abbrev="" category="Special" isfootnote="yes">
+              <description><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></description>
+              </link>
+            <tag group="Has" tag="AlwaysStFt" name="Always Strike First" abbrev="Always Strike First"/>
+            <unitstat id="At" value="1"/>
+            <unitstat id="BS" value="4"/>
+            <unitstat id="In" value="5"/>
+            <unitstat id="Ld" value="8"/>
+            <unitstat id="Mv" value="5"/>
+            <unitstat id="Save" value="6"/>
+            <unitstat id="St" value="3"/>
+            <unitstat id="To" value="3"/>
+            <unitstat id="TotalArc" value="1"/>
+            <unitstat id="WS" value="4"/>
+            <unitstat id="Wo" value="1"/>
+            <info>Hand Weapon; Light Armour; Always Strikes First; Martial Prowess; Valour of Ages</info>
+            <images></images>
+            </unit>
+          </link>
+        <link option="BoltThrow" costvalue="0" costtext="0 points" name="Bolt Thrower" abbrev="" category="TType" isvisible="no" isfootnote="yes">
+          <description><![CDATA[48" Range, Strength 6, Multiple Wounds (D3), Ignores armour saves. Penetrates ranks at -1 Strength for each model slain.]]></description>
+          </link>
+        <link option="heReBoTh" costvalue="0" costtext="0 points" name="Repeater Bolt Thrower" abbrev="" category="Special" isfootnote="yes">
+          <description><![CDATA[Can fire either as an ordinary bolt thrower or fire six Range 48", Strength 4, Armour Piercing bolts.]]></description>
+          </link>
+        <link option="APiercing" costvalue="0" costtext="0 points" name="Armour Piercing" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Wounds caused inflict a further -1 armour save modifier. </description>
+          </link>
+        <link option="MultiWound" costvalue="0" costtext="0 points" name="Multiple Wounds (D3)" abbrev="" category="EqSpecial" isfootnote="yes">
+          <description>Each unsaved Wound inflicted is multiplied by the number indicated.</description>
+          </link>
+        <tag group="HighEStuff" tag="Repeater" name="Repeater" abbrev="Repeater"/>
+        <tag group="Comp" tag="Rare" name="Rare" abbrev="~[#R_]"/>
+        <tag group="Has" tag="APiercing" name="Armour Piercing" abbrev="Armour Piercing"/>
+        <unitstat id="Save" value="7"/>
+        <unitstat id="To" value="7"/>
+        <unitstat id="TotalArc" value="1"/>
+        <unitstat id="US" value="2"/>
+        <unitstat id="Wo" value="2"/>
+        <info>Repeater Bolt Thrower; Armour Piercing; Multiple Wounds (D3)</info>
+        <images></images>
+        </unit>
+      </squad>
+    </squads>
+  <tags>
+    <tag group="language" tag="English" name="English" abbrev="???"/>
+    <tag group="ruleset" tag="CDinWoC" name="Forbid Chaos Dwarfs in WoC" abbrev="???"/>
+    <tag group="ruleset" tag="Ed8" name="8th Edition" abbrev="???"/>
+    <tag group="ruleset" tag="GTEndoTime" name="Normal Game" abbrev="???"/>
+    <tag group="ruleset" tag="NoRoR" name="Forbid Regiments of Renown" abbrev="???"/>
+    <tag group="ruleset" tag="Version" name="2.84" abbrev="???"/>
+    <tag group="ruleset" tag="heHighElf" name="High Elf Army" abbrev="???"/>
+    </tags>
+  <categories>
+    <category name="Equipment Special Rules" id="EqSpecial">
+      <footnote id="StrikeLast" name="Always Strikes Last">Always Strikes Last in Close Combat, regardless of initiative. If Always Strikes First is also present this ability is nullified.</footnote>
+      <footnote id="APiercing" name="Armour Piercing">Wounds caused inflict a further -1 armour save modifier. </footnote>
+      <footnote id="heFirebo" name="Fireborn">2+ ward save against Wounds caused by Flaming Attacks.</footnote>
+      <footnote id="Flaming" name="Flaming Attacks">Causes Fear in War Beasts, Chariots and Cavalry. Re-roll failed wounds when shooting at or assaulting a building.</footnote>
+      <footnote id="MultiWound" name="Multiple Wounds (D3)">Each unsaved Wound inflicted is multiplied by the number indicated.</footnote>
+      <footnote id="Volley" name="Volley Fire"><![CDATA[Half the models in third and subsequent ranks (rounding up) may shoot. A unit cannot Volley Fire if it moved this turn or as a Stand & Shoot reaction.]]></footnote>
+      </category>
+    <category name="Options" id="Equip">
+      <footnote id="heBSB" name="Battle Standard Bearer"><![CDATA[Hold your Ground!: If not fleeing, friendly models within 12" may re-roll failed Leadership tests.]]></footnote>
+      <footnote id="Bow" name="Bow"><![CDATA[24" Range, Strength 3, Volley Fire.]]></footnote>
+      <footnote id="heDragArmr" name="Dragon Armour">Heavy armour; 6+ ward save. Gives Fireborn to the wearer.</footnote>
+      <footnote id="General" name="General"><![CDATA[Inspiring Presence: If not fleeing, friendly units within 12" may use this model's Leadership.]]></footnote>
+      <footnote id="GreatWep" name="Great Weapon">+2 Strength, Always Strikes Last, Requires Two Hands.</footnote>
+      <footnote id="HandWeapon" name="Hand Weapon">6+ Parry Save in Close Combat if footed while fighting with a shield vs. models to the front.</footnote>
+      <footnote id="HeavyArmNS" name="Heavy Armour">5+ armour save.</footnote>
+      <footnote id="Magic2NS" name="Level 2 Wizard">Can channel Power and Dispel dice. Adds +2 to all attempts to cast and dispel. Knows 2 spells.</footnote>
+      <footnote id="LightArmor" name="Light Armour">6+ armour save.</footnote>
+      <footnote id="heLioClo" name="Lion Cloak">+2 armour save against non-magical shooting attacks.</footnote>
+      <footnote id="Longbow" name="Longbow"><![CDATA[30" Range, Strength 3, Volley Fire.]]></footnote>
+      <footnote id="Musician" name="Musician Mus">+1 to combat resolution in a tie. +1 Leadership when attempting to Rally (may not exceed 10). Allows Swift Reform.</footnote>
+      <footnote id="Spear" name="Spear"><![CDATA[(Foot) Fight in Extra Ranks.
+(Mounted) +1 Strength on the charge.]]></footnote>
+      <footnote id="Standard" name="Standard Bearer Std">+1 to Combat Resolution, Standard can be captured if unit Flees.</footnote>
+      </category>
+    <category name="Special Rules" id="Special">
+      <footnote id="StrikeF" name="Always Strikes First"><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></footnote>
+      <footnote id="StrikeF" name="Always Strikes First (Rider only)"><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></footnote>
+      <footnote id="StrikeF" name="Always Strikes First (Riders only)"><![CDATA[Always Strikes First regardless of Initiative. If Initiative is equal to or higher than enemy's, re-roll To Hit misses in Close Combat. If Always Strikes Last is also present this ability is nullified.]]></footnote>
+      <footnote id="heAttMag" name="Attuned to Magic"><![CDATA[5+ ward save and Close Combat attacks are magical. Generates additional effects during the player's magic phase.]]></footnote>
+      <footnote id="heBliAur" name="Blizzard Aura">Enemy unit in base contact has Always Strikes Last and suffers -1 to Strength (to a minimum of 1).</footnote>
+      <footnote id="heDefSho" name="Deflect Shots">6+ ward save against non-magical shooting attacks that do not use templates.</footnote>
+      <footnote id="heDraFir" name="Dragon Fire">Breath Weapon, Strength 4, Flaming Attacks.</footnote>
+      <footnote id="FastCav" name="Fast Cavalry">Models with this rule may free reform, feign flights and shoot after having marched.</footnote>
+      <footnote id="Fly" name="Fly"><![CDATA[Model can make a flying movement of 10" and a march flying movement of 20".]]></footnote>
+      <footnote id="Strider" name="Forest Strider">Model does not take Dangerous Terrain tests. Applies only for specified terrain type; if none is specified, applies for every terrain type.</footnote>
+      <footnote id="Large" name="Large Target"><![CDATA[Cannot claim cover modifiers for obstacles. Also, this model's Inspiring Presence or Hold your Ground! ability range is increased to 18".]]></footnote>
+      <footnote id="heMarPro" name="Martial Prowess">Can make supporting attacks with one extra rank (cumulative with any other special rules). Can shoot with one more rank than normal (cumulative with any other special rules).</footnote>
+      <footnote id="NatArmor" name="Natural Armour (5+)">Improves armour save.</footnote>
+      <footnote id="heReBoTh" name="Repeater Bolt Thrower"><![CDATA[Can fire either as an ordinary bolt thrower or fire six Range 48", Strength 4, Armour Piercing bolts.]]></footnote>
+      <footnote id="ScalySkin" name="Scaly Skin (3+)"><![CDATA[Improves this model's Armour Save.]]></footnote>
+      <footnote id="Stubborn" name="Stubborn">Unit always takes break tests on unmodified Leadership.</footnote>
+      <footnote id="SStrideFly" name="Swiftstride">When charging / fleeing / pursuing, units made entirely of models with Swiftstride roll 3D6 and discard the lowest instead of 2D6 for distance. Moreover, flyers can make a flying charge instead of a normal one, adding 10 instead of the Movement value to the roll.</footnote>
+      <footnote id="Terror" name="Terror"><![CDATA[Enemy units in base contact must take a Leadership test before blows are struck in Close Combat. If failed, their Weapon Skill is reduced to 1 for that round of Combat.
+
+Units charged by this model must immediately take a Leadership test. If failed, the unit must make a Flee! charge reaction.]]></footnote>
+      <footnote id="TStomp" name="Thunderstomp"><![CDATA[Deals D6 automatic hit at creature's Strength with the Always Strikes Last special rule. Applies only against Infantry, War Beasts or Swarms in base contact.]]></footnote>
+      <footnote id="heValAge" name="Valour of Ages">When fighting an army that contains Dark Elves, may re-roll all failed Panic, Fear and Terror tests.</footnote>
+      <footnote id="Vanguard" name="Vanguard"><![CDATA[After deployment, this unit can make a free movement of 12".]]></footnote>
+      </category>
+    <category name="Troop Type" id="TType">
+      <footnote id="BoltThrow" name="Bolt Thrower"><![CDATA[48" Range, Strength 6, Multiple Wounds (D3), Ignores armour saves. Penetrates ranks at -1 Strength for each model slain.]]></footnote>
+      </category>
+    </categories>
+  <validation iswarning="yes"/>
+  <rules>
+    <context id="edition" name="Edition" abbrev="Edition">
+      <ruleset id="Ed8" name="8th Edition" abbrev="8th Edition">Enables the 8th edition of the Warhammer rules, published July 2010.</ruleset>
+      </context>
+    <context id="gametype" name="Game Type" abbrev="Game Type">
+      <ruleset id="GTEndoTime" name="Normal Game" abbrev="Normal Game">Normal game of Warhammer Fantasy Battles. Includes The End Times expansion rules as per Warhammer Rulebook Official Update Version 1.9.</ruleset>
+      </context>
+    <context id="heSubtype" name="Army Subtype" abbrev="Army Subtype">
+      <ruleset id="heHighElf" name="High Elf Army" abbrev="High Elf Army">7th Edition High Elf Army.</ruleset>
+      </context>
+    <context id="special" name="Special Rules" abbrev="Special Rules">
+      <ruleset id="CDinWoC" name="Forbid Chaos Dwarfs in WoC" abbrev="Forbid Chaos Dwarfs in WoC">If checked, Chaos Dwarf Units in Standard Warriors of Chaos Armies are not allowed in the roster.</ruleset>
+      <ruleset id="NoRoR" name="Forbid Regiments of Renown" abbrev="Forbid Regiments of Renown">If checked, Regiments of Renown are not allowed in the roster.</ruleset>
+      </context>
+    <context id="version" name="File Version" abbrev="File Version">
+      <ruleset id="Version" name="2.84" abbrev="2.84">2.84</ruleset>
+      </context>
+    </rules>
+  <stats>
+    <stat id="Fort" name="Fortitude" value="6"/>
+    <stat id="GeneralLd" name="General&apos;s Ld" value="10"/>
+    <stat id="HieroLd" name="Hierophant Ld" value="0"/>
+    <stat id="ModelCount" name="# Models" value="79"/>
+    <stat id="TotChars" name="Total Characters" value="1030"/>
+    <stat id="TotCore" name="Total Core" value="625"/>
+    <stat id="TotMagic" name="Total Magic Items" value="145"/>
+    <stat id="TotRare" name="Total Rare" value="450"/>
+    <stat id="TotSpecial" name="Total Special" value="290"/>
+    <stat id="zPctChars" name="% Characters" value="43"/>
+    <stat id="zPctCore" name="% Core" value="26.1"/>
+    <stat id="zPctMagic" name="% Magic Items" value="6.1"/>
+    <stat id="zPctRare" name="% Rare" value="18.8"/>
+    <stat id="zPctSpec" name="% Special" value="12.1"/>
+    </stats>
+  <composition>
+    <compgroup id="PtsChars" name="Points of Lords" heading="Lord" textmin="0" textmax="1200" valuemin="0" valuemax="1200" barmin="0" barmax="2400" usedtext="910" usedvalue="910"/>
+    <compgroup id="PtsCore" name="Points of Heroes" heading="Hero" textmin="0" textmax="1200" valuemin="0" valuemax="1200" barmin="0" barmax="2400" usedtext="120" usedvalue="120"/>
+    <compgroup id="PtsSpecial" name="Points of Core" heading="Core" textmin="600" textmax="Unlimited" valuemin="600" valuemax="0" barmin="0" barmax="2400" usedtext="625" usedvalue="625"/>
+    <compgroup id="PtsRare" name="Points of Special" heading="Special" textmin="0" textmax="1200" valuemin="0" valuemax="1200" barmin="0" barmax="2400" usedtext="290" usedvalue="290"/>
+    <compgroup id="PtsMagic" name="Points of Rare" heading="Rare" textmin="0" textmax="600" valuemin="0" valuemax="600" barmin="0" barmax="2400" usedtext="450" usedvalue="450"/>
+    </composition>
+  <columns count="15">
+    <column id="_Name_" name="Name" heading="Name"/>
+    <column id="_Count_" name="Count" heading="#"/>
+    <column id="TType" name="Troop Type" heading="Type"/>
+    <column id="Mv" name="Movement" heading="M"/>
+    <column id="WS" name="Weapon Skill" heading="WS"/>
+    <column id="BS" name="Ballistic Skill" heading="BS"/>
+    <column id="St" name="Strength" heading="S"/>
+    <column id="To" name="Toughness" heading="T"/>
+    <column id="Wo" name="Wounds" heading="W"/>
+    <column id="In" name="Initiative" heading="I"/>
+    <column id="At" name="Attacks" heading="A"/>
+    <column id="Ld" name="Leadership" heading="Ld"/>
+    <column id="Save" name="Armour Save" heading="AS"/>
+    <column id="Ward" name="Ward Save" heading="WSv"/>
+    <column id="Magic" name="Magic Level" heading="Mgc"/>
+    </columns>
+  <keywords></keywords>
+  <author date="20141117225114"/>
+  </document>
