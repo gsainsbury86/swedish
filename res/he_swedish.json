@@ -475,5 +475,138 @@
         }
       ]
     }
+  ],
+  "duplicate": [
+    {
+      "name": "Ellyrian Reavers",
+      "costs": [
+        {
+          "low": "2",
+          "high": "2",
+          "cost": "-2"
+        },
+        {
+          "low": "3",
+          "high": "-1",
+          "cost": "-4"
+        }
+      ]
+    },
+    {
+      "name": "White Lions of Chrace",
+      "costs": [
+        {
+          "low": "2",
+          "high": "-1",
+          "cost": "-4"
+        }
+      ]
+    },
+    {
+      "name": "Eagle Claw Bolt Thrower",
+      "costs": [
+        {
+          "low": "1",
+          "high": "1",
+          "cost": "-7"
+        },
+        {
+          "low": "2",
+          "high": "2",
+          "cost": "-9"
+        },
+        {
+          "low": "3",
+          "high": "-1",
+          "cost": "-12"
+        }
+      ]
+    }
+  ],
+  "simple_model": [
+    {
+      "name": "Tyrion",
+      "cost": "-25"
+    },
+    {
+      "name": "Teclis",
+      "cost": "-95"
+    },
+    {
+      "name": "Eltharion",
+      "cost": "-15"
+    },
+    {
+      "name": "Alith Anar",
+      "cost": "-8"
+    },
+    {
+      "name": "Alarielle",
+      "cost": "-60"
+    },
+    {
+      "name": "Prince",
+      "cost": "-10"
+    },
+    {
+      "name": "Annointed of Asuryan",
+      "cost": "-10"
+    },
+    {
+      "name": "Loremaster of Hoeth",
+      "cost": "-22"
+    },
+    {
+      "name": "Archmage",
+      "cost": "-18"
+    },
+    {
+      "name": "Caradyran",
+      "cost": "-10"
+    },
+    {
+      "name": "Korhil",
+      "cost": "-12"
+    },
+    {
+      "name": "Noble",
+      "cost": "-4"
+    },
+    {
+      "name": "Mage",
+      "cost": "-5"
+    },
+    {
+      "name": "Dragon Mage",
+      "cost": "-16"
+    },
+    {
+      "name": "Lothern Sea Helm",
+      "cost": "-2"
+    },
+    {
+      "name": "Handmaiden of the Everqueen",
+      "cost": "-1"
+    },
+    {
+      "name": "Tiranoc Chariot",
+      "cost": "-2"
+    },
+    {
+      "name": "Lion Chariot",
+      "cost": "-3"
+    },
+    {
+      "name": "Lothern Skycutter",
+      "cost": "-3"
+    },
+    {
+      "name": "Flamespyre Phoenix",
+      "cost": "-14"
+    },
+    {
+      "name": "Frostheart Phoenix",
+      "cost": "-40"
+    }
   ]
 }
