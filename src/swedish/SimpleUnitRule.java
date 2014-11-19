@@ -32,16 +32,27 @@ public class SimpleUnitRule implements Rule {
 				Element eElement = (Element) nNode;
 				if(eElement.getAttribute("name").equals(unitName)){
 					for(Range r: rangesToPoints.keySet()){
-						//TODO: Change to unit/@count because models doesn't work for mounted characters
-						int modelCount = Integer.parseInt(eElement.getAttribute("models"));
-						if(r.contains(modelCount)){
-							MathEval math = new MathEval();
-							math.setVariable("x",modelCount);
 
-							int thisPoints = (int) math.evaluate(rangesToPoints.get(r));
-							totalPoints+=thisPoints;
-							if(Calculator.verbose){
-								System.out.println(this.unitName + ": " + modelCount + " " + this.unitName + " = " + thisPoints);
+						NodeList unitList = eElement.getElementsByTagName("unit");
+
+						for(int j = 0; j < unitList.getLength(); j++){
+
+							Node nUnitNode = unitList.item(j);
+							Element eUnitElement = (Element) nUnitNode;
+
+							if(nUnitNode.getParentNode().getNodeName().equals("squad")){
+
+								int modelCount = Integer.parseInt(eUnitElement.getAttribute("count"));
+								if(r.contains(modelCount)){
+									MathEval math = new MathEval();
+									math.setVariable("x",modelCount);
+
+									int thisPoints = (int) math.evaluate(rangesToPoints.get(r));
+									totalPoints+=thisPoints;
+									if(Calculator.verbose){
+										System.out.println(this.unitName + ": " + modelCount + " " + this.unitName + " = " + thisPoints);
+									}
+								}
 							}
 						}
 					}

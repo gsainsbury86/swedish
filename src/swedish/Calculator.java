@@ -44,6 +44,7 @@ public class Calculator {
 
 	}
 
+	// http://www.jsoneditoronline.org
 	private static ArrayList<Rule> prepareRules() throws IOException {
 
 
