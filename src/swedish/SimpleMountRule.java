@@ -32,32 +32,27 @@ public class SimpleMountRule implements Rule {
 				Element eElement = (Element) nNode;
 				if(eElement.getAttribute("name").equals(unitName)){
 					
-					//TODO: Finish
-//					for(Range r: mountsToPoints.keySet()){
-//
-//						NodeList unitList = eElement.getElementsByTagName("unit");
-//
-//						for(int j = 0; j < unitList.getLength(); j++){
-//
-//							Node nUnitNode = unitList.item(j);
-//							Element eUnitElement = (Element) nUnitNode;
-//
-//							if(nUnitNode.getParentNode().getNodeName().equals("squad")){
-//
-//								int modelCount = Integer.parseInt(eUnitElement.getAttribute("count"));
-//								if(r.contains(modelCount)){
-//									MathEval math = new MathEval();
-//									math.setVariable("x",modelCount);
-//
-//									int thisPoints = (int) math.evaluate(mountsToPoints.get(r));
-//									totalPoints+=thisPoints;
-//									if(Calculator.verbose){
-//										System.out.println(this.unitName + ": " + modelCount + " " + this.unitName + " = " + thisPoints);
-//									}
-//								}
-//							}
-//						}
-//					}
+						NodeList unitList = eElement.getElementsByTagName("link");
+
+						for(int j = 0; j < unitList.getLength(); j++){
+
+							Node nLinkNode = unitList.item(j);
+							Element eLinkElement = (Element) nLinkNode;
+
+							if(eLinkElement.getAttribute("category").equals("Mount")){
+								
+								for(String mountName : mountsToPoints.keySet()){
+									if(eLinkElement.getAttribute("name").equals(mountName)){
+
+									int thisPoints = Integer.parseInt(mountsToPoints.get(mountName));
+									totalPoints+=thisPoints;
+									if(Calculator.verbose){
+										System.out.println(this.unitName + ": " + this.unitName + " riding " + mountName + " = " + thisPoints);
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

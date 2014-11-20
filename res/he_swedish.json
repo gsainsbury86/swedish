@@ -672,6 +672,67 @@
           "cost": "-32"
         }
       ]
+    },
+    {
+      "name": "Eltharion",
+      "mounts": [
+        {
+          "name": "Stormwing",
+          "cost": "-5"
+        }
+      ]
+    },
+    {
+      "name": "Annointed of Asuryan",
+      "mounts": [
+        {
+          "name": "Flamespyre Phoenix",
+          "cost": "-15"
+        },
+        {
+          "name": "Frostheart Phoenix",
+          "cost": "-30"
+        }
+      ]
+    },
+    {
+      "name": "Archmage",
+      "mounts": [
+        {
+          "name": "Sun Dragon",
+          "cost": "-5"
+        },
+        {
+          "name": "Moon Dragon",
+          "cost": "-10"
+        },
+        {
+          "name": "Star Dragon",
+          "cost": "-14"
+        }
+      ]
+    },
+    {
+      "name": "Caradryan",
+      "mounts": [
+        {
+          "name": "Ashtari",
+          "cost": "-35"
+        }
+      ]
+    },
+    {
+      "name": "Noble",
+      "mounts": [
+        {
+          "name": "Elven Steed",
+          "cost": "-1"
+        },
+        {
+          "name": "Great Eagle",
+          "cost": "-4"
+        }
+      ]
     }
   ]
 }

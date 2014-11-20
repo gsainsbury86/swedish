@@ -61,6 +61,8 @@ public class Calculator {
 		rules.addAll(prepareSimpleSingleModelRules(obj));
 		
 		rules.addAll(prepareSimpleItemRules(obj));
+		
+		rules.addAll(prepareSimpleMountRules(obj));
 
 		return rules;
 
@@ -213,12 +215,10 @@ public class Calculator {
 			for (int i = 0; i < arr.length(); i++)
 			{
 
-				String mountName =  arr.getJSONObject(i).getString("mount");
+				String mountName =  arr.getJSONObject(i).getString("name");
 				String cost = arr.getJSONObject(i).getString("cost");
 
 				mountsToPoints.put(mountName, cost);
-
-				//System.out.printf("%d %d %s\n",rangeLow,rangeHigh,cost);
 			}
 
 
