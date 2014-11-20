@@ -1,5 +1,5 @@
 {
-  "simple": [
+  "simple_unit": [
     {
       "name": "Spearmen",
       "costs": [
@@ -523,7 +523,7 @@
       ]
     }
   ],
-  "simple_model": [
+  "simple_single_model": [
     {
       "name": "Tyrion",
       "cost": "-25"
@@ -607,6 +607,71 @@
     {
       "name": "Frostheart Phoenix",
       "cost": "-40"
+    }
+  ],
+  "simple_item": [
+    {
+      "name": "Crown of Command",
+      "cost": "-25"
+    },
+    {
+      "name": "Dispel Scroll",
+      "cost": "-7"
+    },
+    {
+      "name": "Earthing Rod",
+      "cost": "-3"
+    },
+    {
+      "name": "Fozzrik's Folding Fortress",
+      "cost": "-100"
+    },
+    {
+      "name": "Giant Blade",
+      "cost": "-2"
+    },
+    {
+      "name": "Khaine's Ring of Fury",
+      "cost": "-5"
+    },
+    {
+      "name": "Power Scroll",
+      "cost": "-4"
+    },
+    {
+      "name": "Power Stone",
+      "cost": "-4"
+    },
+    {
+      "name": "The Reaver Bow",
+      "cost": "-1"
+    }
+  ],
+  "simple_mount": [
+    {
+      "name": "Prince",
+      "mounts": [
+        {
+          "name": "Elven Steed",
+          "cost": "-2"
+        },
+        {
+          "name": "Great Eagle",
+          "cost": "-4"
+        },
+        {
+          "name": "Sun Dragon",
+          "cost": "-10"
+        },
+        {
+          "name": "Moon Dragon",
+          "cost": "-20"
+        },
+        {
+          "name": "Star Dragon",
+          "cost": "-32"
+        }
+      ]
     }
   ]
 }

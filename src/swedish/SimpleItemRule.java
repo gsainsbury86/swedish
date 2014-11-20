@@ -5,34 +5,34 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class SimpleSingleModelRule implements Rule{
+public class SimpleItemRule implements Rule{
 
 
-	private String unitName;
+	private String itemName;
 	private int points;
 
-	public SimpleSingleModelRule(String unitName, int points
+	public SimpleItemRule(String unitName, int points
 			) {
 		super();
 		this.points = points;
-		this.unitName = unitName;
+		this.itemName = unitName;
 	}
 
 	public int calculate(Document doc) {
 
 		int totalPoints = 0;
 
-		NodeList nList = doc.getElementsByTagName("squad");
+		NodeList nList = doc.getElementsByTagName("item");
 
 		for (int temp = 0; temp < nList.getLength(); temp++) {
 
 			Node nNode = nList.item(temp);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) nNode;
-				if(eElement.getAttribute("name").equals(unitName)){
+				if(eElement.getAttribute("name").equals(itemName)){
 
 					if(Calculator.verbose){
-						System.out.println(this.unitName + ": " + this.unitName + " = " + points);
+						System.out.println(this.itemName + ": " + this.itemName + " = " + points);
 					}
 
 					totalPoints +=points;

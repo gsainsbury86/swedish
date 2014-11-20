@@ -59,6 +59,8 @@ public class Calculator {
 		rules.addAll(prepareDuplicateRules(obj));
 
 		rules.addAll(prepareSimpleSingleModelRules(obj));
+		
+		rules.addAll(prepareSimpleItemRules(obj));
 
 		return rules;
 
@@ -66,10 +68,9 @@ public class Calculator {
 
 	public static ArrayList<Rule> prepareSimpleUnitRules(JSONObject obj){
 
-
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simple = obj.getJSONArray("simple");
+		JSONArray simple = obj.getJSONArray("simple_unit");
 
 		for (int j = 0; j < simple.length(); j++){
 
@@ -149,7 +150,7 @@ public class Calculator {
 
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simpleModel = obj.getJSONArray("simple_model");
+		JSONArray simpleModel = obj.getJSONArray("simple_single_model");
 
 		for (int j = 0; j < simpleModel.length(); j++){
 
@@ -166,7 +167,70 @@ public class Calculator {
 		}
 
 		return rules;
-
-
 	}
+	
+	public static ArrayList<Rule> prepareSimpleItemRules(JSONObject obj){
+
+
+		ArrayList<Rule> rules = new ArrayList<Rule>();
+
+		JSONArray simpleModel = obj.getJSONArray("simple_item");
+
+		for (int j = 0; j < simpleModel.length(); j++){
+
+			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+
+			String itemName = simpleModeleObj.getString("name");
+
+			int cost = simpleModeleObj.getInt("cost");
+
+			Rule r = new SimpleItemRule(itemName,cost);
+
+			rules.add(r);
+
+		}
+
+		return rules;
+	}
+	
+	public static ArrayList<Rule> prepareSimpleMountRules(JSONObject obj){
+
+
+		ArrayList<Rule> rules = new ArrayList<Rule>();
+
+		JSONArray simpleModel = obj.getJSONArray("simple_mount");
+
+		for (int j = 0; j < simpleModel.length(); j++){
+
+			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+
+			String unitName = simpleModeleObj.getString("name");
+
+			JSONArray arr = simpleModeleObj.getJSONArray("mounts");
+			
+			HashMap<String,String> mountsToPoints = new HashMap<String,String>();
+
+			for (int i = 0; i < arr.length(); i++)
+			{
+
+				String mountName =  arr.getJSONObject(i).getString("mount");
+				String cost = arr.getJSONObject(i).getString("cost");
+
+				mountsToPoints.put(mountName, cost);
+
+				//System.out.printf("%d %d %s\n",rangeLow,rangeHigh,cost);
+			}
+
+
+
+			Rule r = new SimpleMountRule(unitName,mountsToPoints);
+
+			rules.add(r);
+
+		}
+
+		return rules;
+	}
+	
+	
 }
