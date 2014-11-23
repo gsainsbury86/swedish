@@ -533,7 +533,7 @@
       "cost": "-95"
     },
     {
-      "name": "Eltharion",
+      "name": "Eltharion the Grim",
       "cost": "-15"
     },
     {
@@ -674,7 +674,7 @@
       ]
     },
     {
-      "name": "Eltharion",
+      "name": "Eltharion the Grim",
       "mounts": [
         {
           "name": "Stormwing",
@@ -731,6 +731,120 @@
         {
           "name": "Great Eagle",
           "cost": "-4"
+        }
+      ]
+    }
+  ],
+  "simple_upgrade": [
+    {
+      "name": "Eltharion the Grim",
+      "upgrades": [
+        {
+          "name": "The Lore of Shadow",
+          "cost": "-3"
+        },
+        {
+          "name": "The Lore of Death",
+          "cost": "-3"
+        }
+      ]
+    },
+    {
+      "name": "Loremaster of Hoeth",
+      "upgrades": [
+        {
+          "name": "Book of Hoeth",
+          "cost": "-20"
+        }
+      ]
+    },
+    {
+      "name": "Archmage",
+      "upgrades": [
+        {
+          "name": "Level 4 Wizard",
+          "cost": "-10"
+        },
+        {
+          "name": "The Lore of Death",
+          "cost": "-10"
+        },
+        {
+          "name": "The Lore of High Magic",
+          "cost": "-3"
+        },
+        {
+          "name": "The Lore of Life",
+          "cost": "-7"
+        },
+        {
+          "name": "The Lore of Shadow",
+          "cost": "-7"
+        },
+        {
+          "name": "Book of Hoeth",
+          "cost": "-30"
+        }
+      ]
+    },
+    {
+      "name": "Noble",
+      "upgrades": [
+        {
+          "name": "Battle Standard Bearer",
+          "cost": "-10"
+        }
+      ]
+    },
+    {
+      "name": "Mage",
+      "upgrades": [
+        {
+          "name": "Level 2 Wizard",
+          "cost": "-3"
+        },
+        {
+          "name": "The Lore of Death",
+          "cost": "-3"
+        },
+        {
+          "name": "The Lore of Shadow",
+          "cost": "-3"
+        }
+      ]
+    },
+    {
+      "name": "Dragon Mage",
+      "upgrades": [
+        {
+          "name": "Level 2 Wizard",
+          "cost": "-4"
+        },
+        {
+          "name": "Gem of Sunfire",
+          "cost": "-2"
+        },
+        {
+          "name": "The Lore of Shadow",
+          "cost": "-3"
+        }
+      ]
+    },
+    {
+      "name": "Lothern Sea Helm",
+      "upgrades": [
+        {
+          "name": "Battle Standard Bearer",
+          "cost": "-12"
+        }
+      ]
+    },
+    {
+      "name": "Handmaiden of the Everqueen",
+      "upgrades": [
+        {
+          "name": "Horn of Isha",
+          "cost": "-2"
         }
       ]
     }

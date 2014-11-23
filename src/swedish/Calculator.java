@@ -23,7 +23,7 @@ public class Calculator {
 
 		try{
 
-			File fXmlFile = new File("res/he.xml");
+			File fXmlFile = new File("res/cancon.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
@@ -63,6 +63,8 @@ public class Calculator {
 		rules.addAll(prepareSimpleItemRules(obj));
 		
 		rules.addAll(prepareSimpleMountRules(obj));
+
+		rules.addAll(prepareSimpleUpgradeRules(obj));
 
 		return rules;
 
@@ -224,6 +226,43 @@ public class Calculator {
 
 
 			Rule r = new SimpleMountRule(unitName,mountsToPoints);
+
+			rules.add(r);
+
+		}
+
+		return rules;
+	}
+	
+	
+	public static ArrayList<Rule> prepareSimpleUpgradeRules(JSONObject obj){
+
+
+		ArrayList<Rule> rules = new ArrayList<Rule>();
+
+		JSONArray simpleModel = obj.getJSONArray("simple_upgrade");
+
+		for (int j = 0; j < simpleModel.length(); j++){
+
+			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+
+			String unitName = simpleModeleObj.getString("name");
+
+			JSONArray arr = simpleModeleObj.getJSONArray("upgrades");
+			
+			HashMap<String,String> mountsToPoints = new HashMap<String,String>();
+
+			for (int i = 0; i < arr.length(); i++)
+			{
+
+				String mountName =  arr.getJSONObject(i).getString("name");
+				String cost = arr.getJSONObject(i).getString("cost");
+				
+
+				mountsToPoints.put(mountName, cost);
+			}
+
+			Rule r = new SimpleUpgradeRule(unitName,mountsToPoints);
 
 			rules.add(r);
 
