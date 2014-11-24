@@ -866,90 +866,72 @@
       "name": "Eltharion the Grim",
       "cost": "-3",
       "upgrades": [
-        [
-          "Stormwing",
-          "The Lore of Death"
-        ]
+        "Stormwing",
+        "The Lore of Death"
       ]
     },
     {
       "name": "Prince",
       "cost": "-2",
       "upgrades": [
-        [
-          "Griffon",
-          "Swiftsense"
-        ]
+        "Griffon",
+        "Swiftsense"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-5",
       "upgrades": [
-        [
-          "Level 4 Wizard",
-          "The Lore of Death"
-        ]
+        "Level 4 Wizard",
+        "The Lore of Death"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-2",
       "upgrades": [
-        [
-          "Level 4 Wizard",
-          "The Lore of High Magic"
-        ]
+        "Level 4 Wizard",
+        "The Lore of High Magic"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-5",
       "upgrades": [
-        [
-          "Level 4 Wizard",
-          "The Lore of Life"
-        ]
+        "Level 4 Wizard",
+        "The Lore of Life"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-5",
       "upgrades": [
-        [
-          "Book of Hoeth",
-          "The Lore of Life"
-        ]
+        "Book of Hoeth",
+        "The Lore of Life"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-5",
       "upgrades": [
-        [
-          "Book of Hoeth",
-          "The Lore of Death"
-        ]
+        "Book of Hoeth",
+        "The Lore of Death"
       ]
     },
     {
       "name": "Archmage",
       "cost": "-5",
       "upgrades": [
-        [
-          "Book of Hoeth",
-          "The Lore of Shadow"
-        ]
+        "Book of Hoeth",
+        "The Lore of Shadow"
       ]
     },
     {
       "name": "Noble",
       "cost": "-2",
       "upgrades": [
-        [
-          "Griffon",
-          "Swiftsense"
-        ]
+        "Griffon",
+        "Swiftsense"
       ]
     }
   ]

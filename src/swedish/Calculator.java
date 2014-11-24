@@ -23,7 +23,7 @@ public class Calculator {
 
 		try{
 
-			File fXmlFile = new File("res/cancon.xml");
+			File fXmlFile = new File("res/mages.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
@@ -35,13 +35,11 @@ public class Calculator {
 			for(Rule rule : rules){
 				totalCost += rule.calculate(doc);
 			}
-
 			System.out.println("Score: " + (300+(0.0+totalCost))/10.0);
 
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-
 	}
 
 	// http://www.jsoneditoronline.org
@@ -55,55 +53,41 @@ public class Calculator {
 		JSONObject obj = new JSONObject(jsonFileContents);
 
 		rules.addAll(prepareSimpleUnitRules(obj));
-
 		rules.addAll(prepareDuplicateRules(obj));
-
-		rules.addAll(prepareSimpleSingleModelRules(obj));
-		
-		rules.addAll(prepareSimpleItemRules(obj));
-		
+		rules.addAll(prepareSimpleSingleModelRules(obj));		
+		rules.addAll(prepareSimpleItemRules(obj));		
 		rules.addAll(prepareSimpleMountRules(obj));
-
 		rules.addAll(prepareSimpleUpgradeRules(obj));
+		rules.addAll(prepareCombinationUpgradeRules(obj));
 
 		return rules;
-
 	}
 
 	public static ArrayList<Rule> prepareSimpleUnitRules(JSONObject obj){
 
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simple = obj.getJSONArray("simple_unit");
+		JSONArray array = obj.getJSONArray("simple_unit");
 
-		for (int j = 0; j < simple.length(); j++){
+		for (int j = 0; j < array.length(); j++){
 
-			JSONObject simpleObj = simple.getJSONObject(j);
+			JSONObject simple = array.getJSONObject(j);
+			String name = simple.getString("name");
+			JSONArray costs = simple.getJSONArray("costs");
 
-			String unitName = simpleObj.getString("name");
+			HashMap<Range,String> rangesToCosts = new HashMap<Range,String>();
 
-			JSONArray arr = simpleObj.getJSONArray("costs");
-
-			HashMap<Range,String> rangesToPoints = new HashMap<Range,String>();
-
-			for (int i = 0; i < arr.length(); i++)
+			for (int i = 0; i < costs.length(); i++)
 			{
-				int rangeLow = arr.getJSONObject(i).getInt("low");
-				int rangeHigh = arr.getJSONObject(i).getInt("high");
+				int rangeLow = costs.getJSONObject(i).getInt("low");
+				int rangeHigh = costs.getJSONObject(i).getInt("high");
+				String cost = costs.getJSONObject(i).getString("cost");
 
-				String cost = arr.getJSONObject(i).getString("cost");
-
-				rangesToPoints.put(new Range(rangeLow,rangeHigh), cost);
-
-				//System.out.printf("%d %d %s\n",rangeLow,rangeHigh,cost);
+				rangesToCosts.put(new Range(rangeLow,rangeHigh), cost);
 			}
 
-			Rule r = new SimpleUnitRule(unitName,rangesToPoints);
-
-			rules.add(r);
-
+			rules.add(new SimpleUnitRule(name,rangesToCosts));
 		}
-
 		return rules;
 	}
 
@@ -111,165 +95,144 @@ public class Calculator {
 
 	public static ArrayList<Rule> prepareDuplicateRules(JSONObject obj){
 
-
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
+		JSONArray array = obj.getJSONArray("duplicate");
 
-		JSONArray duplicate = obj.getJSONArray("duplicate");
+		for (int j = 0; j < array.length(); j++){
 
-		for (int j = 0; j < duplicate.length(); j++){
+			JSONObject duplicate = array.getJSONObject(j);
+			String name = duplicate.getString("name");
+			JSONArray costs = duplicate.getJSONArray("costs");
 
-			JSONObject duplicateObj = duplicate.getJSONObject(j);
+			HashMap<Range,String> rangesToCosts = new HashMap<Range,String>();
 
-			String unitName = duplicateObj.getString("name");
-
-			JSONArray arr = duplicateObj.getJSONArray("costs");
-
-			HashMap<Range,String> rangesToPoints = new HashMap<Range,String>();
-
-			for (int i = 0; i < arr.length(); i++)
+			for (int i = 0; i < costs.length(); i++)
 			{
-				int rangeLow = arr.getJSONObject(i).getInt("low");
-				int rangeHigh = arr.getJSONObject(i).getInt("high");
+				int rangeLow = costs.getJSONObject(i).getInt("low");
+				int rangeHigh = costs.getJSONObject(i).getInt("high");
+				String cost = costs.getJSONObject(i).getString("cost");
 
-				String cost = arr.getJSONObject(i).getString("cost");
-
-				rangesToPoints.put(new Range(rangeLow,rangeHigh), cost);
-
-				//System.out.printf("%d %d %s\n",rangeLow,rangeHigh,cost);
+				rangesToCosts.put(new Range(rangeLow,rangeHigh), cost);
 			}
 
-			Rule r = new DuplicateRule(unitName,rangesToPoints);
-
-			rules.add(r);
-
+			rules.add(new DuplicateRule(name,rangesToCosts));
 		}
-
 		return rules;
 	}
 
 
 	public static ArrayList<Rule> prepareSimpleSingleModelRules(JSONObject obj){
 
-
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simpleModel = obj.getJSONArray("simple_single_model");
+		JSONArray array = obj.getJSONArray("simple_single_model");
 
-		for (int j = 0; j < simpleModel.length(); j++){
+		for (int j = 0; j < array.length(); j++){
 
-			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+			JSONObject simpleSingleModel = array.getJSONObject(j);
+			String unitName = simpleSingleModel.getString("name");
+			int cost = simpleSingleModel.getInt("cost");
 
-			String unitName = simpleModeleObj.getString("name");
-
-			int cost = simpleModeleObj.getInt("cost");
-
-			Rule r = new SimpleSingleModelRule(unitName,cost);
-
-			rules.add(r);
-
+			rules.add(new SimpleSingleModelRule(unitName,cost));
 		}
-
 		return rules;
 	}
-	
+
 	public static ArrayList<Rule> prepareSimpleItemRules(JSONObject obj){
 
-
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simpleModel = obj.getJSONArray("simple_item");
+		JSONArray array = obj.getJSONArray("simple_item");
 
-		for (int j = 0; j < simpleModel.length(); j++){
+		for (int j = 0; j < array.length(); j++){
 
-			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+			JSONObject simpleItem = array.getJSONObject(j);
+			String itemName = simpleItem.getString("name");
+			int cost = simpleItem.getInt("cost");
 
-			String itemName = simpleModeleObj.getString("name");
-
-			int cost = simpleModeleObj.getInt("cost");
-
-			Rule r = new SimpleItemRule(itemName,cost);
-
-			rules.add(r);
-
+			rules.add(new SimpleItemRule(itemName,cost));
 		}
-
 		return rules;
 	}
-	
+
 	public static ArrayList<Rule> prepareSimpleMountRules(JSONObject obj){
 
-
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simpleModel = obj.getJSONArray("simple_mount");
+		JSONArray array = obj.getJSONArray("simple_mount");
 
-		for (int j = 0; j < simpleModel.length(); j++){
+		for (int j = 0; j < array.length(); j++){
 
-			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+			JSONObject simpleMount = array.getJSONObject(j);
+			String unitName = simpleMount.getString("name");
+			JSONArray mounts = simpleMount.getJSONArray("mounts");
 
-			String unitName = simpleModeleObj.getString("name");
+			HashMap<String,String> mountsToCosts = new HashMap<String,String>();
 
-			JSONArray arr = simpleModeleObj.getJSONArray("mounts");
-			
-			HashMap<String,String> mountsToPoints = new HashMap<String,String>();
-
-			for (int i = 0; i < arr.length(); i++)
+			for (int i = 0; i < mounts.length(); i++)
 			{
+				String mountName =  mounts.getJSONObject(i).getString("name");
+				String cost = mounts.getJSONObject(i).getString("cost");
 
-				String mountName =  arr.getJSONObject(i).getString("name");
-				String cost = arr.getJSONObject(i).getString("cost");
-
-				mountsToPoints.put(mountName, cost);
+				mountsToCosts.put(mountName, cost);
 			}
-
-
-
-			Rule r = new SimpleMountRule(unitName,mountsToPoints);
-
-			rules.add(r);
-
+			rules.add(new SimpleMountRule(unitName,mountsToCosts));
 		}
-
 		return rules;
 	}
-	
-	
+
+
 	public static ArrayList<Rule> prepareSimpleUpgradeRules(JSONObject obj){
 
+		ArrayList<Rule> rules = new ArrayList<Rule>();
+
+		JSONArray array = obj.getJSONArray("simple_upgrade");
+
+		for (int j = 0; j < array.length(); j++){
+
+			JSONObject simpleUpgrade = array.getJSONObject(j);
+			String unitName = simpleUpgrade.getString("name");
+			JSONArray upgrades = simpleUpgrade.getJSONArray("upgrades");
+
+			HashMap<String,String> upgradesToCosts = new HashMap<String,String>();
+
+			for (int i = 0; i < upgrades.length(); i++)
+			{
+				String mountName =  upgrades.getJSONObject(i).getString("name");
+				String cost = upgrades.getJSONObject(i).getString("cost");
+
+				upgradesToCosts.put(mountName, cost);
+			}
+			rules.add(new SimpleUpgradeRule(unitName,upgradesToCosts));
+		}
+		return rules;
+	}	
+
+	public static ArrayList<Rule> prepareCombinationUpgradeRules(JSONObject obj){
 
 		ArrayList<Rule> rules = new ArrayList<Rule>();
 
-		JSONArray simpleModel = obj.getJSONArray("simple_upgrade");
+		JSONArray array = obj.getJSONArray("combination_upgrade");
 
-		for (int j = 0; j < simpleModel.length(); j++){
+		for (int j = 0; j < array.length(); j++){
 
-			JSONObject simpleModeleObj = simpleModel.getJSONObject(j);
+			JSONObject combination = array.getJSONObject(j);
+			String unitName = combination.getString("name");
+			String cost = combination.getString("cost");
 
-			String unitName = simpleModeleObj.getString("name");
+			JSONArray upgrades = combination.getJSONArray("upgrades");
 
-			JSONArray arr = simpleModeleObj.getJSONArray("upgrades");
-			
-			HashMap<String,String> mountsToPoints = new HashMap<String,String>();
+			ArrayList<String> upgradeList = new ArrayList<String> ();
 
-			for (int i = 0; i < arr.length(); i++)
+			for (int i = 0; i < upgrades.length(); i++)
 			{
+				String upgrade =  upgrades.getString(i);
 
-				String mountName =  arr.getJSONObject(i).getString("name");
-				String cost = arr.getJSONObject(i).getString("cost");
-				
-
-				mountsToPoints.put(mountName, cost);
+				upgradeList.add(upgrade);
 			}
-
-			Rule r = new SimpleUpgradeRule(unitName,mountsToPoints);
-
-			rules.add(r);
-
+			rules.add(new CombinationUpgradeRule(unitName, cost, upgradeList));
 		}
-
 		return rules;
 	}
-	
-	
 }
