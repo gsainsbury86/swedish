@@ -1,5 +1,7 @@
 package swedish;
 
+import swedish.math.MathEval;
+
 import java.util.HashMap;
 
 import org.w3c.dom.Document;

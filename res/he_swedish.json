@@ -645,6 +645,18 @@
     {
       "name": "The Reaver Bow",
       "cost": "-1"
+    },
+    {
+      "name": "The Banner of Avelorn",
+      "cost": "-10"
+    },
+    {
+      "name": "Standard of Discipline",
+      "cost": "-2"
+    },
+    {
+      "name": "Banner of the World Dragon",
+      "cost": "-10"
     }
   ],
   "simple_mount": [
@@ -846,6 +858,98 @@
           "name": "Horn of Isha",
           "cost": "-2"
         }
+      ]
+    }
+  ],
+  "combination_upgrade": [
+    {
+      "name": "Eltharion the Grim",
+      "cost": "-3",
+      "upgrades": [
+        [
+          "Stormwing",
+          "The Lore of Death"
+        ]
+      ]
+    },
+    {
+      "name": "Prince",
+      "cost": "-2",
+      "upgrades": [
+        [
+          "Griffon",
+          "Swiftsense"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-5",
+      "upgrades": [
+        [
+          "Level 4 Wizard",
+          "The Lore of Death"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-2",
+      "upgrades": [
+        [
+          "Level 4 Wizard",
+          "The Lore of High Magic"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-5",
+      "upgrades": [
+        [
+          "Level 4 Wizard",
+          "The Lore of Life"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-5",
+      "upgrades": [
+        [
+          "Book of Hoeth",
+          "The Lore of Life"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-5",
+      "upgrades": [
+        [
+          "Book of Hoeth",
+          "The Lore of Death"
+        ]
+      ]
+    },
+    {
+      "name": "Archmage",
+      "cost": "-5",
+      "upgrades": [
+        [
+          "Book of Hoeth",
+          "The Lore of Shadow"
+        ]
+      ]
+    },
+    {
+      "name": "Noble",
+      "cost": "-2",
+      "upgrades": [
+        [
+          "Griffon",
+          "Swiftsense"
+        ]
       ]
     }
   ]
