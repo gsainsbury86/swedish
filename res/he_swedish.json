@@ -934,5 +934,45 @@
         "Swiftsense"
       ]
     }
+  ],
+  "combination_exclusion": [
+    {
+      "rule": "No wizards in the army",
+      "cost": "+8",
+      "units": [
+        {
+          "name": "Teclis",
+          "type": "unit"
+        },
+        {
+          "name": "Eltharion the Grim",
+          "type": "unit"
+        },
+        {
+          "name": "Alarielle",
+          "type": "unit"
+        },
+        {
+          "name": "Loremaster of Hoeth",
+          "type": "unit"
+        },
+        {
+          "name": "Archmage",
+          "type": "unit"
+        },
+        {
+          "name": "Mage",
+          "type": "unit"
+        },
+        {
+          "name": "Dragon Mage",
+          "type": "unit"
+        },
+        {
+          "name": "The Wizarding Hat",
+          "type": "item"
+        }
+      ]
+    }
   ]
 }

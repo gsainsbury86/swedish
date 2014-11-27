@@ -15,15 +15,25 @@ import java.util.HashMap;
 
 import org.json.*;
 
+import swedish.rules.CombinationExclusionRule;
+import swedish.rules.CombinationUpgradeRule;
+import swedish.rules.DuplicateRule;
+import swedish.rules.Rule;
+import swedish.rules.SimpleItemRule;
+import swedish.rules.SimpleMountRule;
+import swedish.rules.SimpleSingleModelRule;
+import swedish.rules.SimpleUnitRule;
+import swedish.rules.SimpleUpgradeRule;
+
 public class Calculator {
 
-	static boolean verbose = true;
+	public static boolean verbose = true;
 
 	public static void main(String[] args){
 
 		try{
 
-			File fXmlFile = new File("res/mages.xml");
+			File fXmlFile = new File("res/he-2.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
@@ -59,6 +69,7 @@ public class Calculator {
 		rules.addAll(prepareSimpleMountRules(obj));
 		rules.addAll(prepareSimpleUpgradeRules(obj));
 		rules.addAll(prepareCombinationUpgradeRules(obj));
+		rules.addAll(prepareCombinationExclusionRules(obj));
 
 		return rules;
 	}
@@ -232,6 +243,35 @@ public class Calculator {
 				upgradeList.add(upgrade);
 			}
 			rules.add(new CombinationUpgradeRule(unitName, cost, upgradeList));
+		}
+		return rules;
+	}
+	
+
+	public static ArrayList<Rule> prepareCombinationExclusionRules(JSONObject obj){
+
+		ArrayList<Rule> rules = new ArrayList<Rule>();
+
+		JSONArray array = obj.getJSONArray("combination_exclusion");
+
+		for (int j = 0; j < array.length(); j++){
+
+			JSONObject combination = array.getJSONObject(j);
+			String ruleName = combination.getString("rule");
+			String cost = combination.getString("cost");
+
+			JSONArray upgrades = combination.getJSONArray("units");
+
+			HashMap<String, String> namesAndTypes = new HashMap<String, String> ();
+
+			for (int i = 0; i < upgrades.length(); i++)
+			{
+				String name =  upgrades.getJSONObject(i).getString("name");
+				String type = upgrades.getJSONObject(i).getString("type");
+
+				namesAndTypes.put(name, type);
+			}
+			rules.add(new CombinationExclusionRule(ruleName, namesAndTypes, cost));
 		}
 		return rules;
 	}

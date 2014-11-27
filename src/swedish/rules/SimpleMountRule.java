@@ -1,4 +1,4 @@
-package swedish;
+package swedish.rules;
 
 import java.util.HashMap;
 
@@ -6,6 +6,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import swedish.Calculator;
 
 public class SimpleMountRule implements Rule {
 
@@ -19,6 +21,7 @@ public class SimpleMountRule implements Rule {
 		this.unitName = unitName;
 	}
 
+	//TODO: Merge with Upgrade
 	public int calculate(Document doc) {
 
 		int totalPoints = 0;
@@ -47,7 +50,7 @@ public class SimpleMountRule implements Rule {
 									int thisPoints = Integer.parseInt(mountsToPoints.get(mountName));
 									totalPoints+=thisPoints;
 									if(Calculator.verbose){
-										System.out.println(this.unitName + ": " + this.unitName + " riding " + mountName + " = " + thisPoints);
+										System.out.println(this.unitName + " riding " + mountName + " = " + thisPoints);
 									}
 								}
 							}

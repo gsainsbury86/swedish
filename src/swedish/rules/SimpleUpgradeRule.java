@@ -1,4 +1,4 @@
-package swedish;
+package swedish.rules;
 
 import java.util.HashMap;
 
@@ -7,15 +7,17 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import swedish.Calculator;
+
 public class SimpleUpgradeRule implements Rule {
 
 	private String unitName;
-	private HashMap<String, String> mountsToPoints;
+	private HashMap<String, String> upgrades;
 
 	public SimpleUpgradeRule(String unitName, HashMap<String, String> mountsToPoints
 			) {
 		super();
-		this.mountsToPoints = mountsToPoints;
+		this.upgrades = mountsToPoints;
 		this.unitName = unitName;
 	}
 
@@ -41,15 +43,14 @@ public class SimpleUpgradeRule implements Rule {
 
 						//if(eLinkElement.getAttribute("category").equals("Mount")){
 
-							for(String mountName : mountsToPoints.keySet()){
+							for(String upgrade : upgrades.keySet()){
 								
-								
-								if(eLinkElement.getAttribute("name").equals(mountName)){
+								if(eLinkElement.getAttribute("name").equals(upgrade)){
 
-									int thisPoints = Integer.parseInt(mountsToPoints.get(mountName));
+									int thisPoints = Integer.parseInt(upgrades.get(upgrade));
 									totalPoints+=thisPoints;
 									if(Calculator.verbose){
-										System.out.println(this.unitName + ": " + this.unitName + " upgrade " + mountName + " = " + thisPoints);
+										System.out.println(this.unitName + " upgraded with " + upgrade + " = " + thisPoints);
 									}
 								}
 							}

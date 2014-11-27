@@ -1,4 +1,4 @@
-package swedish;
+package swedish.rules;
 
 import java.util.HashMap;
 
@@ -6,6 +6,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import swedish.Calculator;
+import swedish.Range;
 
 public class DuplicateRule implements Rule {
 
@@ -40,9 +43,9 @@ public class DuplicateRule implements Rule {
 							int unitPoints = Integer.parseInt(rangesToPoints.get(r));
 
 							if(Calculator.verbose){
-								System.out.println(this.unitName + ": " + count + " " + this.unitName + " = " + unitPoints);
+								System.out.println(ordinal(count) + " " + this.unitName + " = " + unitPoints);
 							}
-							
+
 							totalPoints +=unitPoints;
 
 						}
@@ -55,4 +58,17 @@ public class DuplicateRule implements Rule {
 
 	}
 
+	public static String ordinal(int i) {
+		String[] sufixes = new String[] { "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th" };
+		switch (i % 100) {
+		case 11:
+		case 12:
+		case 13:
+			return i + "th";
+		default:
+			return i + sufixes[i % 10];
+
+		}
+
+	}
 }

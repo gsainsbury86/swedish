@@ -1,5 +1,7 @@
-package swedish;
+package swedish.rules;
 
+import swedish.Calculator;
+import swedish.Range;
 import swedish.math.MathEval;
 
 import java.util.HashMap;
@@ -52,7 +54,7 @@ public class SimpleUnitRule implements Rule {
 									int thisPoints = (int) math.evaluate(rangesToPoints.get(r));
 									totalPoints+=thisPoints;
 									if(Calculator.verbose){
-										System.out.println(this.unitName + ": " + modelCount + " " + this.unitName + " = " + thisPoints);
+										System.out.println(modelCount + " " + this.unitName + " = " + thisPoints);
 									}
 								}
 							}

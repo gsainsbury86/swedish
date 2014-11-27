@@ -1,4 +1,4 @@
-package swedish;
+package swedish.rules;
 
 import java.util.ArrayList;
 
@@ -6,6 +6,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import swedish.Calculator;
 
 public class CombinationUpgradeRule implements Rule {
 
@@ -54,7 +56,12 @@ public class CombinationUpgradeRule implements Rule {
 		
 		if(presenceCount == upgradeList.size()){
 			if(Calculator.verbose){
-				System.out.println(this.unitName + ": " + this.unitName + " upgrade " + upgradeList + " = " + cost);
+				String upgradeListString = "";
+				for(int i = 0; i < upgradeList.size() -1; i++){
+					upgradeListString += upgradeList.get(i) + " and ";
+				}
+				upgradeListString += upgradeList.get(upgradeList.size()-1);
+				System.out.println(this.unitName + " upgraded with combination of " + upgradeListString + " = " + cost);
 			}
 
 			return Integer.parseInt(cost);

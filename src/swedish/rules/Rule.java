@@ -1,4 +1,4 @@
-package swedish;
+package swedish.rules;
 
 import org.w3c.dom.Document;
 
